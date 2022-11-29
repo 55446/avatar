@@ -1821,6 +1821,7 @@ generic_research_slot_category = {
 				OR = {
 					has_idea = mandatory_education
 					has_idea = elite_education
+					has_idea = tribal_education 
 				}
 				OR = {
 					has_tech = progressive_education_1
