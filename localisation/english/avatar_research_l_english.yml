@@ -978,7 +978,7 @@
  smelting_r1:0 "Vertical Integration"
  smelting_r1_desc:0 "Rather than focus on increasing the efficiency of production methods, some smelters choose instead to buy up mines and mills to ensure a steady, cheap supply of iron and coal, making high quality steel incredibly cheap."
  smelting_l2:0 "Pig Deer Iron"
- smelting_l2_desc:0 "A cheaper, higher carbon content variant of iron, it was once thought useless for its brital nature, but when melted to the appropriate temperature it can be mixed to produce cheap, high quality steel."
+ smelting_l2_desc:0 "A cheaper, higher carbon content variant of iron, it was once thought useless for its brittle nature, but when melted to the appropriate temperature it can be mixed to produce cheap, high quality steel."
  smelting_r2:0 "National Contracts"
  smelting_r2_desc:0 "With so few businesses competing for weapons manufacturing contracts, steal companies are able to negotiate very favorable prices for their wares. They reinvest this money in even more productive capacity and steel flows as freely as water." 
  
