@@ -3,101 +3,252 @@ technologies = {
 	domestication_0 = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_domestication_0
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	domestication_1 = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_domestication_1
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	domestication_2 = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_domestication_2
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	the_wheel = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_the_wheel
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	basic_gear = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_basic_gear
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
-
 	advanced_gear = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_advanced_gear
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	steam_engine = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_steam_engine
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	improved_coal_engine = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_improved_coal_engine
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	modern_engine = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_modern_engine
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	aerodynamics = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_aerodynamics
+			}
+		ai_will_do = {
+			base = 2
+				modifier = {
+					FROM = {
+						OR = {
+							has_war_with =  NAT
+							has_war_with =  EAT
+							has_war_with =  WAT
+							has_war_with =  SAT
+							}	
+						}
+                    factor = 4
+					}
+					
+				}
 	}
 
 	thermodynamics = {
 		research_cost = 1
 		allow = { always = no }
+        categories = {
+			invention
+			UNIQUE_thermodynamics
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	candles = {
 		research_cost = 1
 		allow = { always = no }
+        categories = {
+			invention
+			UNIQUE_candles
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	ink = {
 		research_cost = 1
 		allow = { always = no }
+        categories = {
+			invention
+			UNIQUE_ink
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	libraries = {
 		research_cost = 1
 		allow = { always = no }
+        categories = {
+			invention
+			UNIQUE_libraries
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	basic_tool_making = {
 		research_cost = 1
 		allow = { always = no }
+        categories = {
+			invention
+			UNIQUE_basic_tool_making
+			}
+		ai_will_do = {
+			factor = 20
+				}
 	}
 
 	metal_processing = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_metal_processing
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	steelmaking = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_steelmaking
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	plow = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_plow
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	botanics = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_botanics
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	heal_practices = {
 		research_cost = 1
 		allow = { always = no }
+		categories = {
+			invention
+			UNIQUE_modern_engine
+			}
+		ai_will_do = {
+			factor = 10
+				}
 	}
 
 	
