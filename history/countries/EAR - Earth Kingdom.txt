@@ -134,12 +134,6 @@ earth_puppets_12 = yes
 		add_to_faction = ZIN
 		add_to_faction = YII
 
-		add_to_faction = BAI
-		add_to_faction = YON
-		add_to_faction = FUJ
-		add_to_faction = SHE
-		add_to_faction = XIL
-		add_to_faction = GOU
 
 		remove_from_faction = WUL
 		remove_from_faction = MAK

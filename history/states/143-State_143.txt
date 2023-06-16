@@ -2,46 +2,54 @@
 state={
 	id=143
 	name="STATE_143"
-	manpower=5780
-	state_category=town
 
 	history={
-		owner = XIL
-		controller = XIL
-		add_core_of = XIL
-		
-		add_dynamic_modifier = { modifier = eel_herd }
+		owner = PEN
+		controller = PEN
+		add_core_of = PEN
+		add_dynamic_modifier = {
+			modifier = eel_herd
 
+		}
 		add_to_variable = {
 			var = forest
 			value = 0.7
+
 		}
 		add_to_variable = {
 			var = mountain
 			value = 0
+
 		}
 		add_to_variable = {
 			var = field
 			value = 0.5
+
 		}
 		add_to_variable = {
 			var = water
 			value = 0.4
+
 		}
 		add_to_variable = {
 			var = stonefield
 			value = 0
+
 		}
 		add_to_variable = {
 			var = animal
 			value = 0.2
+
 		}
-		
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
 
+		}
 		12.1.1 = {
-			owner = XIL
-			controller = XIL
-
+			owner = PEN
+			controller = PEN
+			add_core_of = PEN
 			buildings = {
 				infrastructure = 3
 				farm = 1
@@ -53,17 +61,17 @@ state={
 
 		}
 		52.5.16 = {
-			owner = XIL
-			controller = XIL
+			owner = PEN
+			controller = PEN
 
 		}
 		106.2.4 = {
-			owner = XIL
+			owner = PEN
 			controller = FIR
 
 		}
 		111.10.30 = {
-			owner = XIL
+			owner = PEN
 			controller = FIR
 
 		}
@@ -71,6 +79,10 @@ state={
 	}
 
 	provinces={
-		72 289 433 515 627 1542 1715 1900 2982 3034 3557 3665 3767 6548 6578 6674 
+		72 289 433 515 627 1542 1715 1900 2982 3034 3557 3665 3767 4553 6382 6418 6548 6578 6674 
 	}
+	manpower=5780
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

@@ -5,14 +5,13 @@ state={
 	state_category = rural
 
 	history={
-		owner = BAI
-		controller = BAI
-		add_core_of = BAI
+		owner = YII
+		controller = YII
+		add_core_of = YII
 		
 		add_to_variable = {
 			var = forest
-			value = 0.2	
-		}
+			value = 0.2		}
 		add_to_variable = {
 			var = mountain
 			value = 0.4
@@ -33,12 +32,17 @@ state={
 			var = animal
 			value = 0.3
 		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
 	
 		victory_points = { 1202 5 }
 	
 		12.1.1 = {
-			owner = BAI
-			controller = BAI
+			owner = YII
+			controller = YII
+			add_core_of = YII
 
 			buildings = {
 				infrastructure = 2
@@ -48,18 +52,19 @@ state={
 		}
 
 		52.5.16 = {
-			owner = BAI
-			controller = BAI
+			owner = YII
+			controller = YII
 		}
 
 		106.2.4 = {
-			owner = BAI
+			owner = YII
 			controller = FIR
+			
 		}
 
 		111.10.30 = {
-			owner = BAI
-			controller = BAI
+			owner = YII
+			controller = YII
 			FIR = {
 				set_province_controller = 1231
 				set_province_controller = 1856
