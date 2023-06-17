@@ -25,214 +25,6 @@ guiTypes = {
 
 	}
 
-	############# politics and advisors ##############
-
-	containerWindowType = {
-		name = "politics_decisions_ui_window"
-		position = { x = 0 y = 0 }
-		size = { width = 100% height = 188 }
-
-		
-		containerWindowType = {
-			name = "current_state"
-			position = { x = 70 y = 0 }
-
-			iconType = {
-				name = "ideology_icon"
-				spriteType = "GFX_ideology_unknown"
-				position = { x = 150 y = 4 }
-				pdx_tooltip = "main_ideology_ttp"
-			}
-
-			iconType = {
-				name ="legitimacy_level"
-				spriteType = "GFX_legit_bar_large"
-				position = { x= -4 y = 65 }
-				Orientation = "UPPER_LEFT"
-			}
-			iconType = {
-				name ="state_target"
-				spriteType = "GFX_state_target_large"
-				position = { x= 0 y = 65 }
-				Orientation = "UPPER_LEFT"
-
-			}
-			iconType = {
-				name ="state_indicator"
-				spriteType = "GFX_state_indicator"
-				position = { x= 0 y = 78 }
-				Orientation = "UPPER_LEFT"
-
-				pdx_tooltip = "indicator_tooltip"
-				pdx_tooltip_delayed = "indicator_tooltip_delayed"
-			}
-
-		}
-
-		containerWindowType = {
-			name = "available_states"
-			position = { x = 120 y = 100 }
-
-			buttonType = {
-				name = "colonialism"
-				spriteType = "GFX_ideology_colonialism"
-				position = { x = -50 y = 4 }
-				pdx_tooltip = "colonialism"
-				pdx_tooltip_delayed = "colonialism_desc"
-			}
-			buttonType = {
-				name = "nationalism"
-				spriteType = "GFX_ideology_nationalism"
-				position = { x = 90 y = 4 }
-				pdx_tooltip = "nationalism"
-				pdx_tooltip_delayed = "nationalism_desc"
-			}
-			buttonType = {
-				name = "fire_tribes"
-				spriteType = "GFX_ideology_fire_tribes"
-				position = { x = 230 y = 4 }
-				pdx_tooltip = "fire_tribes"
-				pdx_tooltip_delayed = "fire_tribes_desc"
-			}
-
-			buttonType = {
-				name = "absolute_monarchie"
-				spriteType = "GFX_ideology_absolute_monarchie"
-				position = { x = -50 y = 4 }
-				pdx_tooltip = "absolute_monarchie"
-				pdx_tooltip_delayed = "absolute_monarchie_desc"
-			}
-			buttonType = {
-				name = "constitutional_monarchy"
-				spriteType = "GFX_ideology_constitutional_monarchy"
-				position = { x = 20 y = 4 }
-				pdx_tooltip = "constitutional_monarchy"
-				pdx_tooltip_delayed = "constitutional_monarchy_desc"
-			}
-			buttonType = {
-				name = "elective_monarchy"
-				spriteType = "GFX_ideology_elective_monarchy"
-				position = { x = 90 y = 4 }
-				pdx_tooltip = "elective_monarchy"
-				pdx_tooltip_delayed = "elective_monarchy_desc"
-			}
-			buttonType = {
-				name = "earth_tribe"
-				spriteType = "GFX_ideology_earth_tribe"
-				position = { x = 160 y = 4 }
-				pdx_tooltip = "earth_tribe"
-				pdx_tooltip_delayed = "earth_tribe_desc"
-			}
-			buttonType = {
-				name = "comunism"
-				spriteType = "GFX_ideology_comunism"
-				position = { x = 230 y = 4 }
-				pdx_tooltip = "comunism"
-				pdx_tooltip_delayed = "comunism_desc"
-			}
-
-
-			buttonType = {
-				name = "martial_chiefdom"
-				spriteType = "GFX_ideology_martial_chiefdom"
-				position = { x = -50 y = 4 }
-				pdx_tooltip = "martial_chiefdom"
-				pdx_tooltip_delayed = "martial_chiefdom_desc"
-			}
-			buttonType = {
-				name = "theocratic_chiefdom"
-				spriteType = "GFX_ideology_theocratic_chiefdom"
-				position = { x = 40 y = 4 }
-				pdx_tooltip = "theocratic_chiefdom"
-				pdx_tooltip_delayed = "theocratic_chiefdom_desc"
-			}
-			buttonType = {
-				name = "elective_chiefdom"
-				spriteType = "GFX_ideology_elective_chiefdom"
-				position = { x = 140 y = 4 }
-				pdx_tooltip = "elective_chiefdom"
-				pdx_tooltip_delayed = "elective_chiefdom_desc"
-			}
-			buttonType = {
-				name = "liberalism"
-				spriteType = "GFX_ideology_liberalism"
-				position = { x = 230 y = 4 }
-				pdx_tooltip = "liberalism"
-				pdx_tooltip_delayed = "liberalism_desc"
-			}
-
-
-			buttonType = {
-				name = "spiritual_interventionism"
-				spriteType = "GFX_ideology_spiritual_interventionism"
-				position = { x = -50 y = 4 }
-				pdx_tooltip = "spiritual_interventionism"
-				pdx_tooltip_delayed = "spiritual_interventionism_desc"
-			}
-			buttonType = {
-				name = "active_pacifism"
-				spriteType = "GFX_ideology_active_pacifism"
-				position = { x = 90 y = 4 }
-				pdx_tooltip = "active_pacifism"
-				pdx_tooltip_delayed = "active_pacifism_desc"
-			}
-			buttonType = {
-				name = "absolute_pacifism"
-				spriteType = "GFX_ideology_absolute_pacifism"
-				position = { x = 230 y = 4 }
-				pdx_tooltip = "absolute_pacifism"
-				pdx_tooltip_delayed = "absolute_pacifism_desc"
-			}
-
-
-			buttonType = {
-				name = "despotism"
-				spriteType = "GFX_ideology_despotism"
-				position = { x = -70 y = 4 }
-				pdx_tooltip = "despotism"
-				pdx_tooltip_delayed = "despotism_desc"
-			}
-			buttonType = {
-				name = "sovereign_monarchy"
-				spriteType = "GFX_ideology_sovereign_monarchy"
-				position = { x = 00 y = 4 }
-				pdx_tooltip = "sovereign_monarchy"
-				pdx_tooltip_delayed = "sovereign_monarchy_desc"
-			}
-			buttonType = {
-				name = "theocracy"
-				spriteType = "GFX_ideology_theocracy"
-				position = { x = 70 y = 4 }
-				pdx_tooltip = "theocracy"
-				pdx_tooltip_delayed = "theocracy_desc"
-			}
-			buttonType = {
-				name = "republican"
-				spriteType = "GFX_ideology_republican"
-				position = { x = 140 y = 4 }
-				pdx_tooltip = "republican"
-				pdx_tooltip_delayed = "republican_desc"
-			}
-			buttonType = {
-				name = "democracy"
-				spriteType = "GFX_ideology_democracy"
-				position = { x = 210 y = 4 }
-				pdx_tooltip = "democracy"
-				pdx_tooltip_delayed = "democracy_desc"
-			}
-			buttonType = {
-				name = "anarchism"
-				spriteType = "GFX_ideology_anarchism"
-				position = { x = 280 y = 4 }
-				pdx_tooltip = "anarchism"
-				pdx_tooltip_delayed = "anarchism_desc"
-			}
-
-
-		}
-
-	}
-
 	############# peasant revolt ##############
 
 	containerWindowType = {
@@ -286,8 +78,6 @@ guiTypes = {
 			name = "strength_icon"
 			spriteType = "GFX_revolt_icon"
 			position = { x = 240 y = 116 }
-			pdx_tooltip = "revolt_risk_tooltip"
-			pdx_tooltip_delayed = "revolt_risk_tooltip_delayed"
 		}
 		instantTextBoxType = {
 			name ="strength_level"
@@ -297,8 +87,6 @@ guiTypes = {
 			format = center
 			maxHeight = 24
 			maxWidth = 80
-			pdx_tooltip = "revolt_risk_tooltip"
-			pdx_tooltip_delayed = "revolt_risk_tooltip_delayed"
 		}
 
 		iconType = {
@@ -325,7 +113,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "earth_kingdom_ui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 288 }
+		size = { width = 100% height= 128 }
 
 		#iconType = {
 		#	name = "Background"
@@ -334,16 +122,14 @@ guiTypes = {
 		#	scale = 0.58
 		#}
 
-
 		gridboxtype = {
 			name = "earth_kingdom_members_gridbox"
-			position = { x = 18 y = 10 }
+			position = { x = 22 y = 10 }
 			size = { width = 0 height = 0 }
-			slotsize = { width = 42 height = 56 }
-			max_slots_horizontal = 12
+			slotsize = { width = 24 height = 32 }
+			max_slots_horizontal = 20
 			add_horizontal = yes
 		}
-
 
 	}
 
@@ -354,14 +140,15 @@ guiTypes = {
 
 		iconType = {
 			name = "member_country_flag"
-			quadTextureSprite = "GFX_flag_small2"
+			quadTextureSprite = "GFX_flag_small"
 			position = { x = 0 y = 0 }
 			pdx_tooltip = "earth_country_name"
 		}
 		iconType = {
 			name = "member_country_flag_frame"
-			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
-			position = { x = -4 y = -2 }
+			quadTextureSprite = "GFX_flag_small_silver_frame"
+			position = { x = 1 y = -2 }
+			scale = 0.8
 			alwaystransparent = yes
 		}
 
@@ -524,7 +311,7 @@ guiTypes = {
 		iconType = {
 			name = "sozin"
 			spriteType = "GFX_sozin_portrait"
-			position = { x = 90 y = 6 }
+			position = { x = 100 y = 6 }
 			pdx_tooltip = "sozin_ttp"
 			pdx_tooltip_delayed = "sozin_ttp_delayed"
 		}
@@ -532,7 +319,7 @@ guiTypes = {
 		iconType = {
 			name = "sozin_wife"
 			spriteType = "GFX_sozin_wife_portrait"
-			position = { x = 290 y = 6 }
+			position = { x = 280 y = 6 }
 			pdx_tooltip = "sozin_wife_ttp"
 			pdx_tooltip_delayed = "sozin_wife_ttp_delayed"
 		}
@@ -551,62 +338,6 @@ guiTypes = {
 			position = { x = 190 y = 6 }
 			pdx_tooltip = "azulon_ttp"
 			pdx_tooltip_delayed = "azulon_ttp_delayed"
-		}
-
-		iconType = {
-			name = "azulon_wife"
-			spriteType = "GFX_ilah_portrait"
-			position = { x = 290 y = 6 }
-			pdx_tooltip = "ilah_ttp"
-			pdx_tooltip_delayed = "ilah_ttp_delayed"
-		}
-
-		iconType = {
-			name = "iroh"
-			spriteType = "GFX_iroh_adult_portrait"
-			position = { x = 190 y = 6 }
-			pdx_tooltip = "iroh_ttp"
-			pdx_tooltip_delayed = "iroh_ttp_delayed"
-		}
-
-		iconType = {
-			name = "ozai"
-			spriteType = "GFX_ozai_adult_portrait"
-			position = { x = 190 y = 6 }
-			pdx_tooltip = "ozai_ttp"
-			pdx_tooltip_delayed = "ozai_ttp_delayed"
-		}
-
-		iconType = {
-			name = "ozai_wife"
-			spriteType = "GFX_ursa_portrait"
-			position = { x = 290 y = 6 }
-			pdx_tooltip = "ursa_ttp"
-			pdx_tooltip_delayed = "ursa_ttp_delayed"
-		}
-
-		iconType = {
-			name = "lu_ten"
-			spriteType = "GFX_lu_ten_young_portrait"
-			position = { x = 190 y = 6 }
-			pdx_tooltip = "lu_ten_ttp"
-			pdx_tooltip_delayed = "lu_ten_ttp_delayed"
-		}
-
-		iconType = {
-			name = "zuko"
-			spriteType = "GFX_zuko_young_portrait"
-			position = { x = 190 y = 6 }
-			pdx_tooltip = "zuko_ttp"
-			pdx_tooltip_delayed = "zuko_ttp_delayed"
-		}
-
-		iconType = {
-			name = "azula"
-			spriteType = "GFX_azula_young_portrait"
-			position = { x = 190 y = 6 }
-			pdx_tooltip = "azula_ttp"
-			pdx_tooltip_delayed = "azula_ttp_delayed"
 		}
 
 		######################
