@@ -57,51 +57,6 @@ scripted_gui = {
 					NOT = { has_character_flag = FIR_character_death }
 				}
 			}
-
-			ozai_visible = {
-				has_character = FIR_ozai
-				FIR_ozai = {
-					has_character_flag = FIR_character_born
-					NOT = { has_character_flag = FIR_character_death }
-				}
-			}
-			ozai_wife_visible = {
-				has_character = FIR_ursa
-				has_country_leader = {
-					character = FIR_ozai
-					ruling_only = yes
-				}
-				FIR_ursa = {
-					has_character_flag = married_to_ozai
-					NOT = {
-						has_character_flag = in_exile
-					}
-				}
-			}
-
-			lu_ten_visible = {
-				has_character = FIR_lu_ten
-				FIR_lu_ten = {
-					has_character_flag = FIR_character_born
-					NOT = { has_character_flag = FIR_character_death }
-				}
-			}
-
-			zuko_visible = {
-				has_character = FIR_zuko
-				FIR_zuko = {
-					has_character_flag = FIR_character_born
-					NOT = { has_character_flag = FIR_character_death }
-				}
-			}
-
-			azula_visible = {
-				has_character = FIR_azula
-				FIR_azula = {
-					has_character_flag = FIR_character_born
-					NOT = { has_character_flag = FIR_character_death }
-				}
-			}
 		}
 
 		properties = {
@@ -115,30 +70,6 @@ scripted_gui = {
 				x = iroh_x
 				y = iroh_y
 				image = "[GetIrohIcon]"
-			}
-
-			ozai = {
-				x = ozai_x
-				y = ozai_y
-				image = "[GetOzaiIcon]"
-			}
-
-			lu_ten = {
-				x = lu_ten_x
-				y = lu_ten_y
-				image = "[GetLuTenIcon]"
-			}
-
-			zuko = {
-				x = zuko_x
-				y = zuko_y
-				image = "[GetZukoIcon]"
-			}
-
-			azula = {
-				x = azula_x
-				y = azula_y
-				image = "[GetAzulaIcon]"
 			}
 		}
 	}

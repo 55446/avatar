@@ -69,6 +69,19 @@ characters={
 			expire = "138.1.1"
 			id = -1
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			visible = { 
+				has_character_flag = FIR_character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
 	}
 
 	FIR_iroh = {
@@ -80,6 +93,22 @@ characters={
 			army = {
 				large = "GFX_Portrait_Iroh_young"
 				small = "GFX_Portrait_Iroh_young_small"
+			}
+		}
+		field_marshal = {
+			traits = { 
+				
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			visible = { 
+				has_character_flag = FIR_character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
 			}
 		}
 	}
@@ -103,6 +132,22 @@ characters={
 			expire = "110.1.1"
 			id = -1
 		}
+		field_marshal = {
+			traits = { 
+				
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			visible = { 
+				has_character_flag = FIR_character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
 	}
 
 
@@ -119,7 +164,7 @@ characters={
 		}
 
 		country_leader = {
-			ideology = active_pacifism
+			ideology = pacifism
 			traits = {
 				firelord
 			}
@@ -137,7 +182,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { guiding_wind_member }
 		}
@@ -165,7 +212,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { icon_of_the_firenation }
 		}
@@ -183,6 +232,22 @@ characters={
 			}
 		}
 		
+		#advisor = {
+		#	slot = minister_of_culture
+		#	idea_token = FIR_ilah
+		#	cost = 100
+		#	allowed = {
+		#		original_tag = FIR
+		#	}
+		#	available = {
+		#		
+		#	}
+		#	modifier = {
+		#		political_power_cost = 0.1
+		#	}
+		#	
+		#	traits = { icon_of_the_firenation }
+		#}
 	}
 
 	FIR_ursa = {
@@ -197,48 +262,22 @@ characters={
 			}
 		}
 		
-	}
-
-	FIR_lu_ten = {
-		name = FIR_lu_ten
-		portraits={
-			civilian = {
-				large = "GFX_Portrait_Lu_Ten"
-			}
-			army = {
-				large = "GFX_Portrait_Lu_Ten"
-				small = "GFX_Portrait_Lu_Ten_small"
-			}
-		}
-	
-	}
-
-	FIR_zuko = {
-		name = FIR_zuko
-		portraits={
-			civilian = {
-				large = "GFX_Portrait_Zuko"
-			}
-			army = {
-				large = "GFX_Portrait_Zuko"
-				small = "GFX_Portrait_Zuko_small"
-			}
-		}
-	
-	}
-
-	FIR_azula = {
-		name = FIR_azula
-		portraits={
-			civilian = {
-				large = "GFX_Portrait_Azula"
-			}
-			army = {
-				large = "GFX_Portrait_Azula"
-				small = "GFX_Portrait_Azula_small"
-			}
-		}
-	
+		#advisor = {
+		#	slot = minister_of_culture
+		#	idea_token = FIR_ilah
+		#	cost = 100
+		#	allowed = {
+		#		original_tag = FIR
+		#	}
+		#	available = {
+		#		
+		#	}
+		#	modifier = {
+		#		political_power_cost = 0.1
+		#	}
+		#	
+		#	traits = { icon_of_the_firenation }
+		#}
 	}
 
 	FIR_rhya = {
@@ -327,7 +366,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { transportation_expert_1 }
 		}
@@ -353,7 +394,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { amphibious_specialist_1 }
 		}
@@ -416,7 +459,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { swordsmen_guildmaster_1 }
 		}
@@ -490,7 +535,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { navigator }
 		}
@@ -576,7 +623,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { gifted_speaker }
 		}		
@@ -598,9 +647,11 @@ characters={
 			available = {
 				
 			}
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
-			
-			traits = { close_to_the_people_1 }
+			traits = { close_to_the_people }
 		}		
 	}
 	FIR_minister_of_personnel_3 = { 
@@ -620,7 +671,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { military_organiser }
 		}		
@@ -642,7 +695,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { administrator }
 		}		
@@ -664,7 +719,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { lawgiver }
 		}		
@@ -686,7 +743,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { prime_minister }
 		}		
@@ -709,7 +768,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { fiscal_conservative }
 		}		
@@ -731,7 +792,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { regulation_proponent }
 		}		
@@ -753,7 +816,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { architect }
 		}		
@@ -775,7 +840,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { local_investor }
 		}		
@@ -797,7 +864,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { experienced_merchant }
 		}		
@@ -819,7 +888,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { agrarian_reformer }
 		}		
@@ -842,7 +913,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { chauvinist }
 		}		
@@ -864,7 +937,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { royalist }
 		}		
@@ -886,7 +961,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { naturalist }
 		}		
@@ -908,7 +985,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { pacifist }
 		}		
@@ -930,7 +1009,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { multiculturalist }
 		}		
@@ -952,7 +1033,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { personality_cultist }
 		}		
@@ -975,7 +1058,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { neutral_judge }
 		}		
@@ -997,7 +1082,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { corrupt_judge }
 		}		
@@ -1019,7 +1106,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { tough_on_crime }
 		}		
@@ -1041,7 +1130,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { non_bender_activist }
 		}		
@@ -1063,7 +1154,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { feminist }
 		}		
@@ -1085,7 +1178,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { colonial_activist }
 		}		
@@ -1108,7 +1203,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { cruel_supervisor }
 		}		
@@ -1130,7 +1227,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { motivated_pioneer }
 		}		
@@ -1152,7 +1251,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { workers_syndicat }
 		}		
@@ -1174,7 +1275,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { low_standards }
 		}		
@@ -1196,7 +1299,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { unemployment_benefits }
 		}		
@@ -1218,7 +1323,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { outsourcer }
 		}		
@@ -1241,7 +1348,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { warrior_culture }
 		}		
@@ -1263,7 +1372,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { materialist }
 		}		
@@ -1285,7 +1396,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { orthodox }
 		}		
@@ -1307,7 +1420,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { xenophobe }
 		}		
@@ -1329,7 +1444,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { jingoist }
 		}		
@@ -1351,7 +1468,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { fanatic }
 		}		
@@ -1374,7 +1493,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { spymaster }
 		}		
@@ -1396,7 +1517,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { constable }
 		}		
@@ -1418,7 +1541,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { head_censor }
 		}		
@@ -1440,7 +1565,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { master_torturer }
 		}		
@@ -1462,7 +1589,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { master_assassin }
 		}		
@@ -1484,7 +1613,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { astrologist }
 		}		
@@ -1507,7 +1638,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { logistician_2 }
 		}		
@@ -1529,7 +1662,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { forager_2 }
 		}		
@@ -1551,7 +1686,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { jungle_specialist_2 }
 		}		
@@ -1573,7 +1710,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { amphibious_specialist_2 }
 		}		
@@ -1595,7 +1734,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { winter_specialist_2 }
 		}		
@@ -1617,7 +1758,9 @@ characters={
 			available = {
 				
 			}
-			
+			modifier = {
+				political_power_cost = 0.1
+			}
 			
 			traits = { garrison_master_1 }
 		}		

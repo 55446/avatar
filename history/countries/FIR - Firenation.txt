@@ -224,8 +224,6 @@ set_popularities = {
 }
 
 set_variable = { victory_condition = token:fire_supremacy_spirit }
-set_variable = { victory_condition_description = token:fire_supremacy_spirit_description }
-set_variable = { victory_condition_delayed = token:fire_supremacy_spirit_delayed }
 
 add_ideas = {
 	limited_fire_conscription
@@ -314,8 +312,6 @@ FIR_sozin = {
 recruit_character = FIR_elua
 recruit_character = FIR_zeisan
 
-recruit_character = FIR_rhya
-
 recruit_character = FIR_shaozu
 recruit_character = FIR_yotto
 recruit_character = FIR_arashi
@@ -334,10 +330,7 @@ recruit_character = FIR_iroh
 recruit_character = FIR_ozai
 recruit_character = FIR_ursa
 
-recruit_character = FIR_lu_ten
-
-recruit_character = FIR_zuko
-recruit_character = FIR_azula
+recruit_character = FIR_rhya
 
 
 if = {
@@ -868,8 +861,6 @@ if = {
 	}
 
 	set_variable = { victory_condition = token:fire_imperialism_spirit }
-	set_variable = { victory_condition_description = token:fire_imperialism_spirit_description }
-	set_variable = { victory_condition_delayed = token:fire_imperialism_spirit_delayed }
 
 	add_ideas = {
 
@@ -908,15 +899,9 @@ if = {
 	}
 
 
-	set_variable = { azulon_x = 90 }
+	set_variable = { azulon_x = 100 }
 
 	retire_character = FIR_sozin
-	retire_character = FIR_elua
-
-	promote_character = {
-		character = FIR_azulon
-		ideology = colonialism
-	}
 
 	FIR_azulon = {
 		set_character_flag = FIR_character_born
@@ -1019,100 +1004,6 @@ if = {
 	}
 
 
-	set_variable = { azulon_x = 60 }
-	set_variable = { azulon_y = 6 }
-
-	set_variable = { ozai_x = 140 }
-	set_variable = { ozai_y = 6 }
-
-	set_variable = { iroh_x = 240 }
-	set_variable = { iroh_y = 6 }
-
-	FIR_ilah = {
-		set_character_flag = married_to_azulon
-	}
-	retire_character = FIR_ilah
-
-	FIR_iroh = {
-		set_character_flag = FIR_character_born
-		set_character_flag = FIR_character_general
-		set_character_flag = literate
-
-		add_field_marshal_role = {
-			traits = { 
-				prince
-				calm
-				skilled_staffer 
-				offensive_infantry 
-				tactical_mind
-				thorough_planner
-				besieger
-			}
-			skill = 6
-			attack_skill = 5
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 6
-			legacy_id=-1
-
-			visible = { 
-				has_character_flag = FIR_character_born
-				has_character_flag = FIR_character_general
-				NOT = { has_character_flag = FIR_character_death } 
-			}
-		}
-	}
-	set_variable = { FIR.iroh_birth_event = 51 }
-
-	FIR_lu_ten = {
-		set_character_flag = FIR_character_born
-		set_character_flag = FIR_character_general
-		set_character_flag = literate
-
-		add_corps_commander_role = {
-			traits = { 
-				prince
-				brave
-				offensive_infantry 
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 2
-			legacy_id=-1
-
-			visible = { 
-				has_character_flag = FIR_character_born
-				has_character_flag = FIR_character_general
-				NOT = { has_character_flag = FIR_character_death } 
-			}
-		}
-	}
-	set_variable = { FIR.lu_ten_birth_event = 88 }
-
-	FIR_ozai = {
-		set_character_flag = FIR_character_born
-	}
-	set_variable = { FIR.ozai_birth_event = 71 }
-
-	FIR_ursa = {
-		set_character_flag = married_to_ozai
-	}
-	set_variable = { FIR.ursa_birth_event = 76 }
-
-	FIR_zuko = {
-		set_character_flag = FIR_character_born
-	}
-	set_variable = { FIR.zuko_birth_event = 95 }
-
-	FIR_azula = {
-		set_character_flag = FIR_character_born
-	}
-	set_variable = { FIR.azula_birth_event = 97 }
-
-
-
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "FIR_106_naval_mtg"
@@ -1199,28 +1090,6 @@ if = {
 	add_political_power = 1198
 
 	retire_character = FIR_azulon
-	retire_character = FIR_lu_ten
-
-	promote_character = {
-		character = FIR_ozai
-		ideology = colonialism
-	}
-	set_variable = { ozai_x = 160 }
-	set_variable = { ozai_y = 6 }
-
-	FIR_ursa = {
-		set_character_flag = in_exile
-	}
-
-	set_variable = { zuko_x = 300 }
-	set_variable = { zuko_y = 6 }
-
-	set_variable = { azula_x = 80 }
-	set_variable = { azula_y = 6 }
-
-	set_variable = { iroh_x = 350 }
-	set_variable = { iroh_y = 6 }
-
 
 
 	if = {
