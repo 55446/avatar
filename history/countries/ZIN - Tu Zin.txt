@@ -62,13 +62,14 @@ add_ideas = {
 	no_education
 }
 
-recruit_character = ZIN_kuei
-
 set_cosmetic_tag = ZIN_puppet
+
 
 52.5.16 ={
 
 	set_cosmetic_tag = ZIN_puppet
+	
+	OOB = "ZIN_52"
 
 	#add_to_war = {
 	#	targeted_alliance = EAR
@@ -82,13 +83,15 @@ set_cosmetic_tag = ZIN_puppet
 106.2.4 ={
 
 	set_cosmetic_tag = ZIN_puppet
-	
+	OOB = "ZIN_106"
+
 }
 
 
 111.10.30 ={
 
 	set_cosmetic_tag = ZIN_puppet
+	OOB = "ZIN_111"
 
 }
 
