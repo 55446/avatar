@@ -510,19 +510,13 @@
 #	
 #}
 WAT_swordsmen = {
-	available_for = {NWT SWA SWT }
+	available for = {NWT SWA SWT }
 	roles = {role_swordsmen}
-	upgrade_prio = {
-		factor = 1
-
-	}
+	upgrade_prio = 1.0
 	match_to_count = 0.2
 	WAT_swordsmen_0 = {
-		upgrade_prio = {
-			factor = 1
-	
-		}
-		replace_with = WAT_swordsmen_1
+		upgrade_prio = 1.0
+		upgrade_with = WAT_swordsmen_1
 		target_width = 6
 		width_weight = 4
 		column_swap_factor = 0
@@ -572,13 +566,10 @@ WAT_swordsmen = {
 			support = {
 			}	
 		}
-		allowed_types = {swordsmen}
+		allowed types = {swordsmen}
 	}
 	WAT_swordsmen_1 = {
-		upgrade_prio = {
-			factor = 1
-	
-		}
+		upgrade_prio = 1.0
 		target_width = 2
 		width_weight = 4
 		column_swap_factor = 0
@@ -628,6 +619,6 @@ WAT_swordsmen = {
 			support = {
 			}	
 		}
-		allowed_types = {swordsmen}
+		allowed types = {swordsmen}
 	}
 }
