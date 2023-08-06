@@ -1,22 +1,18 @@
 characters={
 
-	AOT_Yokoda={
-		name ="Yokoda"
+	AOT_generic={
+		name="Generic"
 		portraits={
 			civilian={
-				large = GFX_Portrait_AOT_Yokoda_large
+				large="gfx/leaders/AOT/Portrait_Hebai_Forest_colonialism.dds"
 			}
 		}
-		gender = male
 		country_leader={
-			desc="AOT_Yokoda_DESC"
-			ideology=elective_monarchy
-			expire="16.8.10.6"
+			desc="POLITICS_ADOLF_HITLER_DESC"
+			ideology=colonialism
+			expire="120.4.7.1"
 			id=-1
-			traits = {mason_lodger}
 		}
-	}	
-	AOT_generic = {	
 		country_leader={
 			desc="POLITICS_ADOLF_HITLER_DESC"
 			ideology=liberalism
@@ -36,6 +32,7 @@ characters={
 			id=-1
 		}
 	}
+	
 	 ###   ###   #   #  #   ###   ###   ###    ###            
 	#   #  #  #  #   #  #  #     #   #  #  #  #         
 	#####  #  #  #   #  #   ##   #   #  ##     ##       

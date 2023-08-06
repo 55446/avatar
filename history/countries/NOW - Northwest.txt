@@ -64,7 +64,7 @@ add_ideas = {
 
 recruit_character = NOW_fong
 
-set_cosmetic_tag = NOW_puppet
+#set_cosmetic_tag = NOW_puppet
 
 52.5.16 ={
 

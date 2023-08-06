@@ -101,7 +101,7 @@ recruit_character = NIX_paiwei
 #	}
 #}
 
-set_cosmetic_tag = XIN_puppet
+#set_cosmetic_tag = XIN_puppet
 
 52.5.16 ={
 

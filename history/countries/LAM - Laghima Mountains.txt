@@ -65,7 +65,7 @@ add_ideas = {
 
 recruit_character = LAM_fung
 
-set_cosmetic_tag = LAM_puppet
+#set_cosmetic_tag = LAM_puppet
 
 52.5.16 ={
 
