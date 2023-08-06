@@ -227,6 +227,7 @@ FIR_colonies_category = {
 		complete_effect = {
 
 			PFC = {
+					
 				transfer_state = 155
 				add_state_core = 155
 
@@ -253,6 +254,8 @@ FIR_colonies_category = {
 
 			}
 
+			PFC = { load_oob = "PFC_12"}
+
 			FIR = {
 				if = {
 					limit = {
@@ -269,9 +272,13 @@ FIR_colonies_category = {
 
 		}
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				has_war = yes
+				add = 100
+			}
 		}
-		cost = 100
+
         fire_only_once = yes
 	}
 
@@ -303,7 +310,7 @@ FIR_colonies_category = {
 			}
 		}
 
-		cost = 20
+		cost = 50
         fire_only_once = yes
 	}
 
@@ -335,7 +342,7 @@ FIR_colonies_category = {
 			}
 		}
 
-		cost = 20
+		cost = 50
         fire_only_once = yes
 	}
 
@@ -380,6 +387,7 @@ FIR_colonies_category = {
 		complete_effect = {
 
 			YFC = {
+					
 				transfer_state = 230
 				transfer_state = 184
 				transfer_state = 191
@@ -403,6 +411,8 @@ FIR_colonies_category = {
 				add_state_core = 266
 			}
 
+			YFC = { load_oob = "YFC_12"}
+
 			FIR = {
 				if = {
 					limit = {
@@ -418,12 +428,16 @@ FIR_colonies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				has_war = yes
+				add = 100
+			}
 		}
 
 		
 
-		cost = 100
+
         fire_only_once = yes
 	}
 
@@ -478,6 +492,8 @@ FIR_colonies_category = {
 
 			}
 
+			MFC = { load_oob = "MFC_12"}
+
 			FIR = {
 				if = {
 					limit = {
@@ -498,7 +514,7 @@ FIR_colonies_category = {
 
 		
 
-		cost = 100
+
         fire_only_once = yes
 	}
 
@@ -541,6 +557,7 @@ FIR_colonies_category = {
 		complete_effect = {
 
 			HFC = {
+					
 				transfer_state = 171
 				transfer_state = 165
 				transfer_state = 220
@@ -561,6 +578,9 @@ FIR_colonies_category = {
 				add_state_core = 130
 			}
 
+			HFC = { load_oob = "HFC_12"}
+
+
 			FIR = {
 				if = {
 					limit = {
@@ -578,10 +598,14 @@ FIR_colonies_category = {
 
 		}
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				has_war = yes
+				add = 100
+			}
 		}
 
-		cost = 100
+
         fire_only_once = yes
 	}
 
@@ -627,6 +651,8 @@ FIR_colonies_category = {
 		complete_effect = {
 
 			KFC = {
+
+					
 				transfer_state = 280
 				transfer_state = 244
 				transfer_state = 270
@@ -647,6 +673,8 @@ FIR_colonies_category = {
 				add_state_core = 154
 			}
 
+			KFC = { load_oob = "KFC_12"}
+
 			FIR = {
 				if = {
 					limit = {
@@ -663,10 +691,14 @@ FIR_colonies_category = {
 
 		}
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				has_war = yes
+				add = 100
+			}
 		}
 
-		cost = 100
+
         fire_only_once = yes
 	}
 
@@ -712,8 +744,6 @@ FIR_colonies_category = {
 		complete_effect = {
 
 			GFC = {
-
-
 				transfer_state = 124
 				add_state_core = 124
 
@@ -736,6 +766,8 @@ FIR_colonies_category = {
 				add_state_core = 160
 			}
 
+			GFC = { load_oob = "GFC_12"}
+
 			FIR = {
 				if = {
 					limit = {
@@ -752,11 +784,16 @@ FIR_colonies_category = {
 
 		}
 		ai_will_do = {
-			factor = 1
+			base = 1
+			modifier = {
+				has_war = yes
+				add = 100
+			}
+		
 		}
 
 		cost = 100
-        fire_only_once = yes
+ 		fire_only_once = yes
 	}
 
 
@@ -793,13 +830,17 @@ FIR_colonies_category = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				has_war = yes
+				add = 100
+			}
 		}
 
 		complete_effect = {
 
 			OMC = {
-				set_province_name = { id = 8584 name = "New Ozai" }
+					
 				transfer_state = 205
 				add_state_core = 205
 				transfer_state = 335
@@ -818,6 +859,8 @@ FIR_colonies_category = {
 				add_state_core = 377
 			}
 
+			OMC = { load_oob = "OMC_12"}
+
 			FIR = {
 				if = {
 					limit = {
@@ -834,7 +877,7 @@ FIR_colonies_category = {
 
 		}
 
-		cost = 100
+
         fire_only_once = yes
 	}
 
