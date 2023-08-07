@@ -69,19 +69,6 @@ characters={
 			expire = "138.1.1"
 			id = -1
 		}
-		field_marshal = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-
-			visible = { 
-				has_character_flag = FIR_character_born
-				has_character_flag = FIR_character_general
-				NOT = { has_character_flag = FIR_character_death } 
-			}
-		}
 	}
 
 	FIR_iroh = {
@@ -93,22 +80,6 @@ characters={
 			army = {
 				large = "GFX_Portrait_Iroh_young"
 				small = "GFX_Portrait_Iroh_young_small"
-			}
-		}
-		field_marshal = {
-			traits = { 
-				
-			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-
-			visible = { 
-				has_character_flag = FIR_character_born
-				has_character_flag = FIR_character_general
-				NOT = { has_character_flag = FIR_character_death } 
 			}
 		}
 	}
@@ -134,13 +105,13 @@ characters={
 		}
 		field_marshal = {
 			traits = { 
-				
 			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+			legacy_id=-1
 
 			visible = { 
 				has_character_flag = FIR_character_born
@@ -164,7 +135,7 @@ characters={
 		}
 
 		country_leader = {
-			ideology = pacifism
+			ideology = active_pacifism
 			traits = {
 				firelord
 			}
@@ -232,22 +203,6 @@ characters={
 			}
 		}
 		
-		#advisor = {
-		#	slot = minister_of_culture
-		#	idea_token = FIR_ilah
-		#	cost = 100
-		#	allowed = {
-		#		original_tag = FIR
-		#	}
-		#	available = {
-		#		
-		#	}
-		#	modifier = {
-		#		political_power_cost = 0.1
-		#	}
-		#	
-		#	traits = { icon_of_the_firenation }
-		#}
 	}
 
 	FIR_ursa = {
@@ -262,22 +217,48 @@ characters={
 			}
 		}
 		
-		#advisor = {
-		#	slot = minister_of_culture
-		#	idea_token = FIR_ilah
-		#	cost = 100
-		#	allowed = {
-		#		original_tag = FIR
-		#	}
-		#	available = {
-		#		
-		#	}
-		#	modifier = {
-		#		political_power_cost = 0.1
-		#	}
-		#	
-		#	traits = { icon_of_the_firenation }
-		#}
+	}
+
+	FIR_lu_ten = {
+		name = FIR_lu_ten
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Lu_Ten"
+			}
+			army = {
+				large = "GFX_Portrait_Lu_Ten"
+				small = "GFX_Portrait_Lu_Ten_small"
+			}
+		}
+	
+	}
+
+	FIR_zuko = {
+		name = FIR_zuko
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Zuko"
+			}
+			army = {
+				large = "GFX_Portrait_Zuko"
+				small = "GFX_Portrait_Zuko_small"
+			}
+		}
+	
+	}
+
+	FIR_azula = {
+		name = FIR_azula
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Azula"
+			}
+			army = {
+				large = "GFX_Portrait_Azula"
+				small = "GFX_Portrait_Azula_small"
+			}
+		}
+	
 	}
 
 	FIR_rhya = {
@@ -562,7 +543,26 @@ characters={
 			legacy_id=-1
 		}
 	}
-
+	FIR_Yonrha = {
+		name = "Yonrha"
+		portraits = {
+			army = {
+			 large = "GFX_Portrait_Firenation_Yonrha"
+			}
+			army={
+				small="GFX_Portrait_Firenation_Yonrha_small"
+			}
+		}
+		navy_leader={
+			traits={ generic }
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
 
 	FIR_generic={
 		name="Generic"
