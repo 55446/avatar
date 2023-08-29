@@ -329,6 +329,15 @@ ideas = {
 					has_idea = local_markets
 					has_large_ally_not_pick_local_markets = yes
 				}
+				modifier = {
+					factor = 0
+					OR = {
+						check_variable = { ai_priority_grain > 1}
+						check_variable = { ai_priority_animal_products > 1 }
+						check_variable = { ai_priority_wood > 1 }
+						check_variable = { ai_priority_iron > 1 }
+					}
+				}
    			}
 		}
 		

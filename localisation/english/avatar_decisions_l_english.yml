@@ -271,6 +271,8 @@
  makapu_colony:0 "Makapu Colony"
  tienhai_colony:0 "Tienhai Colony"
  hu_xin:0 "Hu Xin Colony"
+ han_tui_colony:0 "Han Tui Colony"
+ garsai_colony:0 "Garsai Colony"
  new_ozai:0 "New Ozai"
 
  FIR_outpost_category:0 "Highsea Outposts"
@@ -422,7 +424,8 @@
  EAR_southern_temple_attack_desc:0 ""
  EAR_western_temple_attack:0 "Western Temple Attack"
  EAR_western_temple_attack_desc:0 ""
-
+ EAR_ba_sing_se_wall:0 "The Great Walls of Ba Sing Se"
+west_wall_setup:0 "Expand West Wall's Barracks"
  earth_economic_buildup_category:0 "Economic Measures"
  earth_economic_buildup_category_desc:0 "The Earth Kingdom may not currently match the Fire Nation when it comes to raw economic output, but our massive population and earthbending talent will be the fuel to power the blast furnace of our industrial future."
  populational_census:0 "Population Census"
