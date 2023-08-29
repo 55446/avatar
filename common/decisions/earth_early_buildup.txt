@@ -221,6 +221,16 @@ earth_economic_buildup_category = {
 				instant_build = yes
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_resources_in_country = {
+					resource = chromium
+					amount > 0
+				}
+			}
+			factor = 0
+		}
 	}
 
 	TARGETED_rescue_struggling_masons = {
@@ -625,7 +635,7 @@ earth_economic_buildup_category = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 	

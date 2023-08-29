@@ -563,3 +563,53 @@ ba_sing_se_defenders = {
 	}
 	
 }
+EAR_dont_build_farms_in_the_city = {
+	allowed = {tag = EAR}
+	enable = {
+		always = yes
+	}
+	ai_strategy = {
+		type = build_building
+		id = farm
+		target = 179
+		value = 0
+		
+	}
+	ai_strategy = {
+		type = build_building
+		id = farm
+		target = 174
+		value = 0
+		
+	}
+	ai_strategy = {
+		type = build_building
+		id = farm
+		target = 173
+		value = 0
+	}
+	ai_strategy = {
+		type = build_building
+		id = farm
+		target = 161
+		value = 0
+	}
+	ai_strategy = {
+		type = build_building
+		id = farm
+		target = 162
+		value = 0
+	}
+	ai_strategy = {
+		type = build_building
+		id = farm
+		target = 187
+		value = 0
+	}
+	ai_strategy = {
+		type = build_building
+		id = farm
+		target = 189
+		value = 0
+	}
+}

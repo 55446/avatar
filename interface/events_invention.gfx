@@ -188,5 +188,9 @@ spriteTypes = {
 		name = "GFX_invention_news_event_020"
 		texturefile = "gfx/event_pictures/inventions/invention_news_event_020.dds"
 	}
+	spriteType = {
+		name = "GFX_invention_ranches"
+		texturefile = "gfx/event_pictures/inventions/Invention_Ranches.dds"
+	}
 	
 }

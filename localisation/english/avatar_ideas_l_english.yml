@@ -295,6 +295,16 @@
  sun_auxiliary_desc:0 "Guards, patrols, and runners are all positions that nonbenders can easily occupy, allowing benders to take on more important roles."
 
  air_benders_only_desc:0 "Due to their focus on spirituality, the Air Nomads are solely comprised of benders, leaving no need to deliberate on the state of nonbenders."
+kyoshi_benders_only:0 "Kyoshi Warriors Only"
+kyoshi_benders_only_desc:0 "Kyoshi warriors are all our island needs to defend itself."
+kyoshi_exceptional:0 "Exceptional Regulars"
+kyoshi_exceptional_desc:0 "Even among the regular populace there appear to be a few individuals capable of keeping up with our Kyoshi warriors. Let us not impede their entry into our armed forces."
+kyoshi_volunteers:0 "Volunteer Regulars"
+kyoshi_volunteers_desc:0 "The Kyoshi Warriors form our  elite units, but we could profit from regulars volunteering for service."
+kyoshi_auxiliary:0 "Auxiliary Regulars"
+kyoshi_auxiliary_desc:0 "While only a Kyoshi warrior has what it takes to serve on the frontlines, perhaps the regular people could handle supporting her."
+kyoshi_indiscriminate:0 "Indiscriminate Conscription"
+kyoshi_indiscriminate_desc:0 "In these desperate times a regular warrior can fulfill all the duties a Kyoshi warrior can."
 
  family_support:0 "Taxation"
  family_support_1:0 "Very High Taxes"

@@ -40,7 +40,17 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				has_resources_in_country = {
+					resource = oil
+					amount > 2
+					extracted = yes
+				}
+				has_template_containing_unit = light_cavalry
+				add = 1
+			}
+
 		}
 		
 		categories = {
@@ -63,7 +73,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				has_template_containing_unit = light_cavalry
+				add = 1
+			}
 		}
 		
 		categories = {

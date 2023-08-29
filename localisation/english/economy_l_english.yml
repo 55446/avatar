@@ -22,7 +22,7 @@
  wood_tooltip_delayed:0 "§LMe and my wood.§!"
  minerals_tooltip:0 "§YMinerals§! \nProduced: [?resource_produced@stone|+=2] \nConsumed in Buildings: [?mtth:stone_cost|-2] \nImports: [?resource_imported@stone|+=2] \nExports: [?resource_exported@stone|=Y2] \n\nFrom Self Employed: [?self_employed_minerals_supply|+2] \nBought by Population: [?minerals_demand|-2] \nMarket Price: [?minerals_price|-=Y2]"
  minerals_tooltip_delayed:0 "§LA comon resource to craft stuff.§!"
- fossile_fuels_tooltip:0 "§YFossile Fuels§! \nProduced: [?resource_produced@rubber|+=2] \nConsumed in Buildings: [?mtth:fossile_fuels_cost|-2] \nImports: [?resource_imported@rubber|+=2] \nExports: [?resource_exported@rubber|=Y2] \n\nBought by Population: [?fossile_fuels_demand|-2] \nMarket Price: [?fossile_fuels_price|-=Y2]"
+ fossile_fuels_tooltip:0 "§YFossile Fuels§! \nProduced: [?resource_produced@rubber|+=2] \nConsumed in Buildings: [?mtth:fuel_cost|-2] \nImports: [?resource_imported@rubber|+=2] \nExports: [?resource_exported@rubber|=Y2] \n\nBought by Population: [?fossile_fuels_demand|-2] \nMarket Price: [?fossile_fuels_price|-=Y2]"
  fossile_fuels_tooltip_delayed:0 "§LA good source of energy.§!"
  iron_tooltip:0 "§YMetals§! \nProduced: [?resource_produced@iron|+=2] \nConsumed in Buildings: [?mtth:iron_cost|-2] \nImports: [?resource_imported@iron|+=2] \nExports: [?resource_exported@iron|=Y2] \n\nBought by Population: [?iron_demand|-2] \nMarket Price: [?iron_price|-=Y2]"
  iron_tooltip_delayed:0 "§LA useful meterial to craft sturdy stuff.§!"

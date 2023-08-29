@@ -16,7 +16,7 @@ no_manufactory = {
 
 yes_manufactory = {
 	allowed = {
-		always = yes
+		NOT= {tag = EAR}
 	}
 	enable = {
 		num_of_civilian_factories < 100
@@ -62,7 +62,7 @@ build_supply_lines = {
 
 smithy_good = {
 	allowed = {
-		always = yes
+		NOT = {tag = EAR}
 	}
 	enable = {
 		manpower_per_military_factory > 1000
@@ -97,9 +97,9 @@ build_farms = {
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = farm
-		value = 1000
+		value = 1
 	}
 }
 
@@ -115,9 +115,9 @@ build_ranches = {
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = ranch
-		value = 1000
+		value = 1
 	}
 }
 
@@ -133,9 +133,9 @@ build_quarries = {
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = quarry
-		value = 1000
+		value = 1
 	}
 }
 
@@ -151,9 +151,9 @@ build_lumber_mills = {
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = lumber_mill
-		value = 1000
+		value = 1
 	}
 }
 
@@ -169,14 +169,14 @@ build_weavings = {
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = crop_weaving_mill
-		value = 1000
+		value = 1
 	}
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = animal_weaving_mill
-		value = 1000
+		value = 1
 	}
 }
 
@@ -198,10 +198,10 @@ build_mines = {
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = mine
-		value = 1000
-	}
+		value = 1
+		}
 }
 
 build_steelworks = {
@@ -217,9 +217,9 @@ build_steelworks = {
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = steelworks
-		value = 1000
+		value = 1
 	}
 }
 
@@ -236,19 +236,19 @@ build_food = {
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = farm
-		value = 1000
+		value = 1
 	}
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = fishing_stand
-		value = 1000
+		value = 1
 	}
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = mill
-		value = 1000
+		value = 1
 	}
 }
 
@@ -265,9 +265,9 @@ build_consumer = {
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
-		type = building_target
+		type = build_building
 		id = consumer_good_factory
-		value = 10
+		value = 1
 	}
 }
 
@@ -328,6 +328,7 @@ build_masonry = {
 			resource = bricks_resource
 			amount < 0
 		}
+		has_positive_construction_materials_ratio = no
 	}
 	abort_when_not_enabled = yes
 
@@ -352,6 +353,7 @@ build_steel_beam_factory = {
 			resource = steel_beams_resource
 			amount < 1
 		}
+		has_positive_construction_materials_ratio = no
 	}
 	abort_when_not_enabled = yes
 

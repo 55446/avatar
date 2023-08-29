@@ -173,10 +173,10 @@ country_event = {
 #### ranch
 country_event = {
 	id = centralisation.5
-	title = centralisation.5.title
-	desc = centralisation.5.desc
+	title = centralisation.5.t
+	desc = centralisation.5.d
 	
-	picture = GFX_report_event_invention
+	picture = GFX_invention_ranches
 	
 	is_triggered_only = yes
 	minor_flavor = yes
@@ -581,7 +581,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = child_labour_event
-			add_ideas = cild_labour
+			add_ideas = child_labour
 		}
 	}
 

@@ -101,7 +101,7 @@ reoccupy_category = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 100
 		}
 	}
 

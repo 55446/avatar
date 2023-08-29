@@ -100,3 +100,9 @@ has_large_ally_not_pick_local_markets = {
 		num_of_military_factories > 30
 	}
 }
+#Country scope
+has_positive_construction_materials_ratio = {
+	check_variable = {
+		ROOT.construction_material > 0
+	}	
+}
