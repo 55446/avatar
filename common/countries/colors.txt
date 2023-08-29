@@ -67,28 +67,28 @@ WUL = {
 	color_ui = rgb { 124 85 58 }
 }
 MAK = {
-	color = rgb { 54 163 7 }
-	color_ui = rgb { 54 163 7 }
+	color = rgb { 204 206 24 }
+	color_ui = rgb { 204 206 24 }
 }
 NOW = {
-	color = rgb { 54 163 7 }
-	color_ui = rgb { 54 163 7 }
+	color = rgb { 164 216 34 }
+	color_ui = rgb { 164 216 34 }
 }
 HAN = {
-	color = rgb { 54 163 7 }
-	color_ui = rgb { 54 163 7 }
+	color = rgb { 134 146 64 }
+	color_ui = rgb { 134 146 64 }
 }
 GAR = {
-	color = rgb { 54 163 7 }
-	color_ui = rgb { 54 163 7 }
+	color = rgb { 164 166 14 }
+	color_ui = rgb { 164 166 14 }
 }
 NIX = {
-	color = rgb { 54 163 7 }
-	color_ui = rgb { 54 163 7 }
+	color = rgb { 194 196 54 }
+	color_ui = rgb { 194 196 54 }
 }
 YUE = {
-	color = rgb { 54 163 7 }
-	color_ui = rgb { 54 163 7 }
+	color = rgb { 184 166 24 }
+	color_ui = rgb { 184 166 24 }
 }
 CHN = {
 	color = rgb { 54 163 7 }
@@ -294,7 +294,10 @@ BIN = {
 	color = rgb { 172 204 79 }
 	color_ui = rgb { 172 204 79 }
 }
-
+BHA = {
+	color = hsv { 0 1.66 1.25 }
+	color = hsv { 0 1.50 1.10 }
+}
 CAI = {
 	color = rgb { 78 137 79 }
 	color_ui = rgb { 78 137 79 }
@@ -345,10 +348,10 @@ HAS = {
 	color_ui = rgb { 175 204 108 }
 }
 
-HON = {
-	color = rgb { 111 158 45 }
-	color_ui = rgb { 111 158 45 }
-}
+#HON = {
+	#color = rgb { 111 158 45 }
+	#color_ui = rgb { 111 158 45 }
+#}
 
 JIA = {
 	color = rgb { 213 216 149 }
