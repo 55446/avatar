@@ -6,7 +6,7 @@ characters={
 			desc = BAI_Fugowa_desc
 			ideology = constitutional_monarchy
 			traits = {reclusive_manipulator}
-			expire = 24.2.31
+			expire = 24.02.31.0300
 		}
 	}
 	BAI_generic={

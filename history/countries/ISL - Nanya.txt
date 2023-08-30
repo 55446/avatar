@@ -135,6 +135,94 @@ if = {
 	}
 
 }
+<<<<<<< Updated upstream
+=======
+recruit_character = ISL_Ruya
+recruit_character = ISL_Kiheure
+recruit_character = ISL_Chitsuu
+recruit_character = ISL_Teamu
+recruit_character = ISL_Mayuchi
+recruit_character = ISL_Temeiha
+recruit_character = ISL_Sukemeke
+recruit_character = ISL_Minumite
+recruit_character = ISL_Fuwatonu
+recruit_character = ISL_Eetene
+recruit_character = ISL_Ihauto
+recruit_character = ISL_Horu
+recruit_character = ISL_Rika
+recruit_character = ISL_Kako
+recruit_character = ISL_Monasu
+recruit_character = ISL_Maku
+recruit_character = ISL_Rota
+recruit_character = ISL_Weomoka
+recruit_character = ISL_Seha
+recruit_character = ISL_Wetemima
+recruit_character = ISL_Roohie
+recruit_character = ISL_Yohehi
+recruit_character = ISL_Here
+recruit_character = ISL_Hiwe
+recruit_character = ISL_Horekike
+recruit_character = ISL_Sako
+recruit_character = ISL_Efusa
+recruit_character = ISL_Yute
+recruit_character = ISL_Eki
+recruit_character = ISL_Shiwami
+recruit_character = ISL_minister_of_personnel_1
+recruit_character = ISL_minister_of_personnel_2
+recruit_character = ISL_minister_of_personnel_3
+recruit_character = ISL_minister_of_personnel_4
+recruit_character = ISL_minister_of_personnel_5
+recruit_character = ISL_minister_of_personnel_6
+
+recruit_character = ISL_minister_of_finance_1
+recruit_character = ISL_minister_of_finance_2
+recruit_character = ISL_minister_of_finance_3
+recruit_character = ISL_minister_of_finance_4
+recruit_character = ISL_minister_of_finance_5
+recruit_character = ISL_minister_of_finance_6
+
+recruit_character = ISL_minister_of_culture_1
+recruit_character = ISL_minister_of_culture_2
+recruit_character = ISL_minister_of_culture_3
+recruit_character = ISL_minister_of_culture_4
+recruit_character = ISL_minister_of_culture_5
+recruit_character = ISL_minister_of_culture_6
+
+recruit_character = ISL_minister_of_justice_1
+recruit_character = ISL_minister_of_justice_2
+recruit_character = ISL_minister_of_justice_3
+recruit_character = ISL_minister_of_justice_4
+recruit_character = ISL_minister_of_justice_5
+recruit_character = ISL_minister_of_justice_6
+
+recruit_character = ISL_minister_of_works_1
+recruit_character = ISL_minister_of_works_2
+recruit_character = ISL_minister_of_works_3
+recruit_character = ISL_minister_of_works_4
+recruit_character = ISL_minister_of_works_5
+recruit_character = ISL_minister_of_works_6
+
+recruit_character = ISL_minister_of_rites_1
+recruit_character = ISL_minister_of_rites_2
+recruit_character = ISL_minister_of_rites_3
+recruit_character = ISL_minister_of_rites_4
+recruit_character = ISL_minister_of_rites_5
+recruit_character = ISL_minister_of_rites_6
+
+recruit_character = ISL_head_of_intelligence_1
+recruit_character = ISL_head_of_intelligence_2
+recruit_character = ISL_head_of_intelligence_3
+recruit_character = ISL_head_of_intelligence_4
+recruit_character = ISL_head_of_intelligence_5
+recruit_character = ISL_head_of_intelligence_6
+
+recruit_character = ISL_quartermaster_1
+recruit_character = ISL_quartermaster_2
+recruit_character = ISL_quartermaster_3
+recruit_character = ISL_quartermaster_4
+recruit_character = ISL_quartermaster_5
+recruit_character = ISL_quartermaster_6
+>>>>>>> Stashed changes
 
 52.5.16 ={
 

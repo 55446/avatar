@@ -490,7 +490,9 @@
  calendar_event.1.a:0 "Interesting..."
  calendar_event.1.b:0 "We must seize this opportunity! Find the Avatar!"
  calendar_event.1.c:0 "This will not end well."
-
+ watertribe_barbarians.1.t:0 "Barbarians Sack [watertribe_barbarians_state.GetName]"
+ watertribe_barbarians.1.d:0 "Our scouting party has found a crib containing a mutilated body of a baby! The river this crib sailed down on springs in [watertribe_barbarians_state.GetName!] Nomadic Barbarians scouring our lands have taken opportunity of our internal division and occupied [watertribe_barbarians_state.GetName]! We must get it back!"
+ watertribe_barbarians.1.a:0 "We must drive them out!"
 
  #alerts
 

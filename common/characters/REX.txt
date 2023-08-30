@@ -65,7 +65,7 @@ characters = {
 		gender = female
 		advisor = {
 			slot = head_of_intelligence
-			idea_token = rex_Maaso_token
+			idea_token = rex_Rero_token
 			traits = {master_torturer}
 			cost = 150
 		}
@@ -76,7 +76,7 @@ characters = {
 		gender = male
 		advisor = {
 			slot = head_of_intelligence
-			idea_token = rex_Maaso_token
+			idea_token = rex_Rekenu_token
 			traits = {master_torturer}
 			cost = 150
 		}

@@ -162,6 +162,10 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				political_power_gain < 0.4
+				add = 1
+			}
 		}
 	}
 	administrator = {
@@ -485,6 +489,24 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_stability < 50
+				add = 1
+			}
+			modifier = {
+				has_stability < 40
+				has_stability > 30
+				add = 2
+			}
+			modifier = {
+				has_stability < 30
+				has_stability > 20
+				add = 3
+			}
+			modifier = {
+				has_stability < 21
+				add = 5
+			}
 		}
 	}
 	dai_li_judge = {
@@ -545,6 +567,10 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_war_support < 50
+				add = 1
+			}
 		}
 	}
 	colonial_activist = {
@@ -567,6 +593,19 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_war = yes
+				OR = {
+					stockpile_ratio = {
+						archetype = heavy_armor_equipment
+						ratio > 0.5
+					}
+					stockpile_ratio = {
+						archetype = light_armor_equipment
+						ratio > 0.5
+					}
+				}
+			}
 		}
 	}
 	workers_syndicat = {

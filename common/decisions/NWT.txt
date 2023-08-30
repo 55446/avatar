@@ -810,57 +810,90 @@ NWT_tribe_union = {
 	
 	
 	
-	
-	NWT_hunt_barbarians = {
-
+	NWT_hunt_barbarians_decision = {
 		icon = watertribe_barbarians_icon
-
 		allowed = {
 			tag = NWT
 		}
-
-		visible = {
+		complete_effect = {
 			any_owned_state = {
-				has_dynamic_modifier = { modifier = watertribe_barbarians}
-			}
-		}
-		available = {
-			any_owned_state = {
-				has_dynamic_modifier = { modifier = watertribe_barbarians }
-			}
-
-			has_equipment = { spear_equipment > 199 }
-			has_equipment = { heavy_armor_equipment > 199 }
-		}
-
-		days_remove = 30
-
-		custom_cost_trigger = {
-			has_equipment = { spear_equipment > 199 }
-			has_equipment = { heavy_armor_equipment > 199 }
-		}
-		custom_cost_text = spearmen_200
-		
-		remove_effect = {
-			random_owned_state = {
 				limit = {
-					has_dynamic_modifier = { modifier = watertribe_barbarians }
+					has_dynamic_modifier = {
+						watertribe_barbarians
+					}
 				}
-				remove_dynamic_modifier = { modifier = watertribe_barbarians }
+				remove_dynamic_modifier = {
+					watertribe_barbarians
+				}	
 			}
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				NWT = {
-					has_equipment = { spear_equipment > 399 }
-					has_equipment = { heavy_armor_equipment > 399 }
-					
-				}
-				add = 80
-			}
-		}
+		}	
 	}
+#	NWT_hunt_barbarians_mission = {
+		#Activate this mmission if any owned state has barbarians rampant
+		#To complete, have troops in state
+		#When failed have a neighbouring state get barbarians rampant
+#		icon = watertribe_barbarians_icon
+#		allowed = {
+#			OR = {
+#				tag = NWT
+#				tag = SWT
+#			}
+#		}
+#		cancel_trigger = {	 
+#			NWT = {
+#						has_idea = one_tribe 
+#				}
+#		}	
+#		activation = {
+#			NWT = {
+#				any_owned_state = {
+#						has_dynamic_modifier = { modifier = watertribe_barbarians}
+#					}
+#				}
+#		}
+#		target_trigger = {
+#			has_dynamic_modifier = { modifier = watertribe_barbarians}
+#		}
+#		days_mission_timeout = 90
+#		available = {	#What you have to do to complete it.
+#			random_owned_state = {
+#				limit = {
+#					has_dynamic_modifier = { modifier = watertribe_barbarians}
+#				}
+#				army_manpower_in_state = {
+#					state = THIS
+#					amount = 240
+#				}
+#			}	
+#		}
+#		complete_effect = { #What happens if you complete it.
+#			FROM = {
+#				remove_dynamic_modifier = {
+#					modifier = watertribe_barbarians
+#				}
+#				add_dynamic_modifier = {
+#					modifier = watertribe_battling_barbarians
+#					days = 7
+#				}	
+#			}
+#		}
+#		timeout_effect = {	#What happens if you do not complete it.
+#			FROM = {
+#				random_neighbor_state = {
+#					limit = {
+#						OR = {
+#							is_controlled_by = NWT
+#							is_controlled_by = SWT
+#						}
+#					}
+#					add_dynamic_modifier = {
+#						modifier = watertribe_barbarians
+#					}
+#				} 
+#			}
+#		}
+	}
+
 }
 
 

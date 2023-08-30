@@ -2395,10 +2395,10 @@ NAI = {
 	-- Calculating wanted nr of divisions
 	WANTED_UNITS_INDUSTRY_FACTOR = 1.45,                        -- How many units a country wants is partially based on how much military industry that is available
 	WANTED_UNITS_THREAT_BASE = 0.7,                             -- If no threat, multiply min wanted units by this
-	WANTED_UNITS_THREAT_MAX = 25.0,                             -- Normalized threat is clamped to this
+	WANTED_UNITS_THREAT_MAX = 1.0,      -- Was 25.00                       -- Normalized threat is clamped to this
 	WANTED_UNITS_WAR_THREAT_FACTOR = 1.5,                       -- Factor threat with this if country is at war. this value is overriden by the value in ideology database if that value exceedes this.
 	WANTED_UNITS_DANGEROUS_NEIGHBOR_FACTOR = 1.25,              -- Factor if has dangerous neighbor
-	WANTED_UNITS_MANPOWER_DIVISOR = 22000,                      -- Normalizing divisor for AI manpower. (for each x max available manpower, they want one division)
+	WANTED_UNITS_MANPOWER_DIVISOR = 22000,                    -- Normalizing divisor for AI manpower. (for each x max available manpower, they want one division)
 	WANTED_UNITS_WEIGHT_FRONTS_WANT = 0.01,                      -- Weight of front needs when computing final nr wanted units
 	WANTED_UNITS_WEIGHT_FACTORIES = 0.2,                        -- Weight of military factories when computing final nr wanted units
 	WANTED_UNITS_WEIGHT_MANPOWER = 0.4,                         -- Weight of manpower availability when computing final nr wanted units
@@ -3095,7 +3095,7 @@ NAI = {
 	-- <end> assigning leaders to armies
 
 	-- Which settings will AI use for area defense by default
-	AREA_DEFENSE_SETTING_VP = false,
+	AREA_DEFENSE_SETTING_VP = true,
 	AREA_DEFENSE_SETTING_PORTS = true,
 	AREA_DEFENSE_SETTING_AIRBASES = false,
 	AREA_DEFENSE_SETTING_FORTS = false,
@@ -3103,7 +3103,7 @@ NAI = {
 	AREA_DEFENSE_SETTING_RAILWAYS = false,
 
 	AREA_DEFENSE_MINCAP_MAX_CAPITAL_DEFENSE = 100,              -- MaxUnits for capital defense is at least this. (basically use capital defense as a buffer if we have "too many units")
-	AREA_DEFENSE_MINCAP_DESIRED_CAPITAL_DEFENSE = 5,            -- DesiredUnits for capital defense is at least this.
+	AREA_DEFENSE_MINCAP_DESIRED_CAPITAL_DEFENSE = 1,            -- DesiredUnits for capital defense is at least this.
 	AREA_DEFENSE_MINCAP_MAX_HOME_AREA = 10,                     -- MaxUnits for home area is at least this.
 	AREA_DEFENSE_MINCAP_DESIRED_HOME_AREA = 3,                  -- DesiredUnits for home area is at least this.
 

@@ -59,12 +59,15 @@ state={
 			buildings = {
 				infrastructure = 7
 				arms_factory = 2
+<<<<<<< Updated upstream
 				#1013 = {
 				#	naval_base = 4
 				#	naval_base = 1
 				#	wall = 4
 				#}
 
+=======
+>>>>>>> Stashed changes
 			}
 
 		}

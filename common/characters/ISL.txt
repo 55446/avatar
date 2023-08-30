@@ -45,4 +45,342 @@ characters={
 			id=-1
 		}
 	}
-}
+	ISL_Ruya={
+		name = Ruya
+		cost = 150
+		gender = male
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = isl_minister_of_personnel_1
+			cost = 200
+			allowed = {
+				original_tag = ISL
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { gifted_speaker }
+		}		
+	}
+	}
+	ISL_Kiheure={
+		name = Kiheure
+		cost = 150
+		gender = male
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = isl_minister_of_personnel_2
+			cost = 200
+			allowed = {
+				original_tag = ISL
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { close_to_the_people }
+		}		
+	}
+	ISL_Chitsuu={
+		name = Chitsuu
+		cost = 150
+		gender = male
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = isl_minister_of_personnel_3
+			cost = 200
+			allowed = {
+				original_tag = ISL
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { military_organiser }
+		}		
+	}
+	ISL_Teamu={
+		name = Teamu
+		cost = 150
+		gender = male
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = isl_minister_of_personnel_4
+			cost = 200
+			allowed = {
+				original_tag = ISL
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { administrator }
+		}		
+	}
+	ISL_Mayuchi={
+		name = Mayuchi
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_personnel}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Temeiha={
+		name = Temeiha
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_personnel}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Sukemeke={
+		name = Sukemeke
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_works}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Minumite={
+		name = Minumite
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_works}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Fuwatonu={
+		name = Fuwatonu
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_works}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Eetene={
+		name = Eetene
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_works}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Ihauto={
+		name = Ihauto
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_works}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Horu={
+		name = Horu
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_works}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Rika={
+		name = Rika
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_culture}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Kako={
+		name = Kako
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_culture}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Monasu={
+		name = Monasu
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_culture}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Maku={
+		name = Maku
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_culture}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Rota={
+		name = Rota
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_culture}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Weomoka={
+		name = Weomoka
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_culture}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Seha={
+		name = Seha
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_justice}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Wetemima={
+		name = Wetemima
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_justice}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Roohie={
+		name = Roohie
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_justice}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Yohehi={
+		name = Yohehi
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_justice}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Here={
+		name = Here
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_justice}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Hiwe={
+		name = Hiwe
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_justice}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Horekike={
+		name = Horekike
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_rites}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Sako={
+		name = Sako
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_rites}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Efusa={
+		name = Efusa
+		cost = 150
+		gender = male
+		advisor  = {
+			slot = {minister_of_rites}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Yute={
+		name = Yute
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_rites}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Eki={
+		name = Eki
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_rites}
+			traits = {generic_trait}
+		}
+	}
+	ISL_Shiwami={
+		name = Shiwami
+		cost = 150
+		gender = female
+		advisor  = {
+			slot = {minister_of_rites}
+			traits = {generic_trait}
+		}
+	}
