@@ -629,3 +629,6 @@ formable_nations_ISL_tt:0 "Controls all Shimson states"
 
 add_100:0 "DEBUG add 100 war weariness"
 set_0:0 "DEBUG set war weariness to 0"
+
+spirit_anger_category:0 "Spirit Anger"
+political_category:0 "Politics"

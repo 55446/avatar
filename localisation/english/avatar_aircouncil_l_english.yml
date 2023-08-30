@@ -111,7 +111,7 @@
  decrease_civilian_priorities:0 "Decrease a civilian topic's priority"
  
  AIR_mission_nr1:0 "Expand the temple's living quarters"
- AIR_mission_nr1_desc:0 "By using resources to increase the size of the temple's living quarters we can allow more monks to participate in our spiritual live at the temple."
+ AIR_mission_nr1_desc:0 "By using resources to increase the size of the temple's living quarters we can allow more monks to participate in our spiritual life at the temple."
  mission_nr1_timeout:0 "Up to two council member may lose harmony if we fail such a simple task."
  mission_nr1_success:0 "One council member may gain harmony after completing this task"
  
@@ -174,7 +174,7 @@
  mission_nr12_success:0 "One council member may gain harmony after we manage to find new restingplaces."
  
  AIR_mission_nr13:0 "Improve air bending lessons"
- AIR_mission_nr13_desc:0 "Let us improve the air bending lessons. This will help the monks to live a more spiritual live."
+ AIR_mission_nr13_desc:0 "Let us improve the air bending lessons. This will help the monks to live a more spiritual life."
  mission_nr13_timeout:0 "Up to two council member may lose harmony if we fail such a simple task."
  mission_nr13_success:0 "One council member may gain harmony after completing this task"
  
@@ -217,7 +217,7 @@
  mission_nr28_success:0 "One council member may gain harmony after attending a rally."
 
  AIR_mission_nr29:0 "National hero propaganda"
- AIR_mission_nr29_desc:0 "Start a political campain to expand the fame and glory of our national heroes."
+ AIR_mission_nr29_desc:0 "Start a political campaign to expand the fame and glory of our national heroes."
  mission_nr29_timeout:0 "Up to two council member may lose harmony if our heroes' fame does not increase."
  mission_nr29_success:0 "One council member may gain harmony when hearing about our heroes glory."
 
