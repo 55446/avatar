@@ -92,6 +92,26 @@ revolt_risk = {
 	
 }
 
+peasant_opinion = {
+	color_type = good 
+	value_type = number
+	precision = 0
+	postfix = none
+}
+nobility_opinion = {
+	color_type = good 
+	value_type = number
+	precision = 0
+	postfix = none
+}
+
+available_missions = {
+	color_type = good 
+	value_type = number
+	precision = 0
+	postfix = none
+}
+
 garrison_factor_modifier = {
 	color_type = bad 
 	value_type = percentage
@@ -117,19 +137,25 @@ monthly_migration_state = {
 reforestation = {
 	color_type = good 
 	value_type = number
-	precision = 2
+	precision = 1
 	postfix = none
 }
 breeding = {
 	color_type = good 
 	value_type = number
-	precision = 2
+	precision = 1
 	postfix = none
 }
 fertilizer = {
 	color_type = good 
 	value_type = number
-	precision = 2
+	precision = 1
+	postfix = none
+}
+waters = {
+	color_type = good 
+	value_type = number
+	precision = 1
 	postfix = none
 }
 mill_factor = {
@@ -186,61 +212,47 @@ bender_disabled = {
 
 
 avatar_opinion_modifier = {
-
 	color_type = good
 	value_type = yes_no
 	precision = 0
 	postfix = none
-	
 }
 women_recruitment_modifier = {
-
 	color_type = good
 	value_type = yes_no
 	precision = 0
 	postfix = none
-	
 }
 tech_share_modifier = {
-
 	color_type = good
 	value_type = yes_no
 	precision = 0
 	postfix = none
-	
 }
 
 ministry_advisor_cost = {
-
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
-
 }
 institution_cost = {
-
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
-	
 }
 law_change_cost = {
-
 	color_type = bad
 	value_type = percentage
 	precision = 0
 	postfix = none
-	
 }
 monthly_unification = {
-
 	color_type = good
 	value_type = number
 	precision = 0
 	postfix = none
-	
 }
 
 taxation = {
@@ -340,6 +352,95 @@ steel_beams_demand = {
 	precision = 1
 	postfix = none
 }
+
+
+
+grain_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+animal_products_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+textile_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+wood_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+minerals_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+fossile_fuels_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+iron_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+steel_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+food_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+consumer_goods_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+luxury_goods_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+planks_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+bricks_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+steel_beams_throughput = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+}
+
+
 
 building_upkeep_factor = {
 	color_type = bad
@@ -495,13 +596,6 @@ peasant_consumer_good_factor  = {
 	
 }
 
-food_production_bonus = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	postfix = none	
-}
-
 daily_ration_gain = {
 	color_type = good
 	value_type = number
@@ -618,7 +712,7 @@ knowledge = {
 	postfix = none
 	
 }
-knowledge_gain = {
+knowledge_gain = {     #### is literacy cap
 
 	color_type = good
 	value_type = percentage_in_hundred
@@ -639,6 +733,13 @@ peoples_initiative = {
 
 
 core_state_cost_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
+
+colonise_state_cost_factor = {
 	color_type = bad
 	value_type = percentage
 	precision = 0

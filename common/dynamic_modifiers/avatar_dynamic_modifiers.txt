@@ -55,6 +55,14 @@ new_settlement = {
 	monthly_migration_state = 0.005
 }
 
+brave_pioneers = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_brave_pioneers
+
+	monthly_migration_state = -0.01
+}
+
 destroyed_city = {
 	enable = { always = yes }
 
@@ -278,11 +286,11 @@ watertribe_barbarians = {
 
 	icon = GFX_modifiers_watertribe_barbarians
 	
+	local_factories = -0.15
 	state_resources_factor = -0.25
 	state_production_speed_buildings_factor = -0.25
 	attrition_for_controller = 0.2
 }
-<<<<<<< Updated upstream
 
 trade_hub = {
 	enable = { always = yes }
@@ -295,14 +303,65 @@ trade_hub = {
 
 	monthly_migration_state = 0.01
 	state_resources_factor = 0.1
-=======
-watertribe_battling_barbarians = {
-	enable = { always = yes }
+}
 
-	icon = GFX_modifiers_watertribe_battling_barbarians
-	
-	state_resources_factor = -0.25
-	state_production_speed_buildings_factor = -0.25
-	attrition_for_controller = 0.05	
->>>>>>> Stashed changes
+boost_fire = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			THIS.CONTROLLER = {
+				has_government = fire_culture
+			}
+		}
+	}
+
+	monthly_fire_culture_in_state = 0.1
+}
+boost_water = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			THIS.CONTROLLER = {
+				has_government = water_culture
+			}
+		}
+	}
+
+	monthly_water_culture_in_state = 0.1
+}
+boost_earth = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			THIS.CONTROLLER = {
+				has_government = earth_culture
+			}
+		}
+	}
+
+	monthly_earth_culture_in_state = 0.1
+}
+boost_air = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			THIS.CONTROLLER = {
+				has_government = air_culture
+			}
+		}
+	}
+
+	monthly_fire_culture_in_state = 0.1
+}
+boost_pluralist = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			THIS.CONTROLLER = {
+				has_government = pluralist_culture
+			}
+		}
+	}
+
+	monthly_pluralist_culture_in_state = 0.1
 }

@@ -24,32 +24,38 @@ FIR_royal_family_category = {
 				ruling_only = yes
 			}
 			has_idea = legacy_of_roku_and_sozin
-			has_country_flag = fire_no_genocide
+			NOT = {
+				has_country_flag = fire_event_to_decide_genocide
+			}
 		}
 
-		days_remove = 30
-
-		custom_cost_trigger = {
-			command_power > 50
-		}
-		custom_cost_text = honour_cost_50
 
 		complete_effect = {
-			hidden_effect = {
-				add_command_power = -50
-			}
-			custom_effect_tooltip = regret_letting_roku_die_ttp
-		}
-
-		remove_effect = {
 			add_stability = 0.1
 			add_war_support = -0.1
+
+			custom_effect_tooltip = regret_letting_roku_die_ttp
+			set_country_flag = fire_no_genocide
+
+			add_ideas = FIR_guiding_wind_opposition
+
+			custom_effect_tooltip = fir_no_genocide_decisions
+			
+			hidden_effect = {
+				EAR = {
+					country_event = {
+						id = air_gen.1
+						days = 31
+					}
+				}
+			}
 		}
+
 
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 	}
 
@@ -74,10 +80,29 @@ FIR_royal_family_category = {
 				character = FIR_sozin
 				ruling_only = yes
 			}
-			has_country_flag = genocide_active
+			NOT = {
+				has_country_flag = fire_event_to_decide_genocide
+			}
+			custom_trigger_tooltip = {
+				tooltip = can_add_mission		
+				check_variable = { ROOT.acive_missions < mtth:get_mission_cap }
+			}
 		}
 
 		complete_effect = {
+			add_to_variable = { 
+				var = ROOT.acive_missions
+				value = 1
+				tooltip = add_mission_ttp
+			}
+			unlock_decision_category_tooltip = air_genocide_category
+
+			set_variable = {
+				genocide_preparation = 4
+			}
+			set_country_flag = genocide_active
+
+
 			swap_ideas = {
 				remove_idea = legacy_of_roku_and_sozin
 				add_idea = ruthless_expansionism
@@ -89,13 +114,14 @@ FIR_royal_family_category = {
 			}
 
 			custom_effect_tooltip = continue_expansion_plans_ttp
+
 		}
 
-		cost = 50
+		#cost = 50
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 110
+			factor = 0
 		}
 	}
 
@@ -386,6 +412,8 @@ FIR_royal_family_category = {
 
 	crown_azulon = {
 
+		icon = fire_azulon_coronation
+
 		allowed = {
 			tag = FIR
 		}
@@ -425,6 +453,8 @@ FIR_royal_family_category = {
 	}
 
 	azulon_marry_ilah = {
+
+		icon = fire_marriage
 
 		allowed = {
 			tag = FIR
@@ -466,5 +496,173 @@ FIR_royal_family_category = {
 		ai_will_do = {
 			factor = 110
 		}
+	}
+
+	divine_firelord = {
+
+		icon = fire_divine_firelord
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			NOT = {
+				has_country_leader_with_trait = divine_ruler
+				has_country_leader_with_trait = personality_cult
+			}
+			has_country_leader_with_trait = firelord
+		}
+		available = {
+			NOT = {
+				has_country_leader_with_trait = divine_ruler
+				has_country_leader_with_trait = personality_cult
+			}
+			has_country_leader_with_trait = firelord
+			custom_trigger_tooltip = {
+				tooltip = check_authority_60_tooltip		
+				check_variable = {
+					var = current_authority
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = can_add_mission		
+				check_variable = { ROOT.acive_missions < mtth:get_mission_cap }
+			}
+		}
+
+		days_remove = 30
+
+		remove_effect = {
+			add_country_leader_trait = divine_ruler
+
+			unlock_decision_category_tooltip = FIR_civil_decision_category
+			add_to_variable = { 
+				var = ROOT.acive_missions
+				value = 1
+				tooltip = add_mission_ttp
+			}
+			set_country_flag = civil_category_active
+		}
+
+		cost = 50
+		
+		ai_will_do = {
+			factor = 100
+		}
+	
+	}
+
+	godlike_firelord = {
+
+		icon = fire_godlike_firelord
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_country_leader_with_trait = divine_ruler
+			has_country_leader_with_trait = firelord
+		}
+		available = {
+			has_country_leader_with_trait = divine_ruler
+			has_country_leader_with_trait = firelord
+			custom_trigger_tooltip = {
+				tooltip = check_authority_80_tooltip		
+				check_variable = {
+					var = current_authority
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+
+		days_remove = 30
+
+		modifier = {
+			
+		}
+
+		remove_effect = {
+			every_character = {
+				limit = {
+					is_country_leader = yes
+				}
+				swap_country_leader_traits = { 
+					remove = divine_ruler
+					add = personality_cult
+				}
+			}
+		}
+
+		cost = 50
+		
+		ai_will_do = {
+			factor = 100
+		}
+	
+	}
+
+
+	FIR_approach_earth_kingdom = {
+
+		icon = rewriting
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			tag = FIR
+			NOT = {
+				FIR = {
+					has_war_with = EAR
+				}
+			}
+			OR = {
+				230 = { has_dynamic_modifier = { modifier = firenation_settlers } }
+				280 = { has_dynamic_modifier = { modifier = firenation_settlers } }
+			}
+		}
+		available = {
+			NOT = {
+				FIR = {
+					has_war_with = EAR
+				}
+			}
+			230 = { is_claimed_by = FIR }
+			280 = { is_claimed_by = FIR }
+		}
+		
+		fire_only_once = yes		
+
+		#cost = 25
+
+		complete_effect = {
+			set_country_flag = approach_earthkingdom
+		}
+
+		#days_remove = 30
+
+		remove_effect = {
+			EAR = { country_event = { id = fir_treaty.1 hours = 1 } }
+			230 = { 
+				add_claim_by = FIR
+				add_core_of = YFC
+			}
+			280 = { 
+				add_claim_by = FIR
+				add_core_of = KFC
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+		}
+
 	}
 }

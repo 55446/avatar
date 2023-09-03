@@ -3,13 +3,52 @@
 ####################
 
 
+
+FIR_royal_family_category = {
+	icon = GFX_decision_category_royal_family
+
+	#picture = GFX_decision_cat_fir_royal_family
+
+	scripted_gui = fire_family_ui
+
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = FIR
+	}
+
+	visible = {
+		original_tag = FIR
+		NOT = { has_country_flag = hide_country_decisions }
+	}
+
+	priority = {
+		base = 1150
+		modifier = {
+			factor = 100
+			has_country_leader = {
+			    name = "Empty Throne"
+			    ruling_only = yes
+			}
+		}
+	}
+}
+
+
 air_genocide_category = {
 	icon = GFX_decision_category_genocide
 
 	picture = GFX_decision_cat_air_genocide
 
+	allowed = {
+		original_tag = FIR
+	}
+
 	visible = {
 		original_tag = FIR
+		NOT = { has_country_flag = hide_mission_decisions }
+
+		has_country_flag = genocide_active
 		NOT = {
 			has_global_flag = air_nomad_genocide
 		}
@@ -31,6 +70,12 @@ FIR_industrialisation_category = {
 
 	visible = {
 		original_tag = FIR
+		NOT = { has_country_flag = hide_mission_decisions }
+
+		has_country_flag = industrialisation_active
+		NOT = {
+			has_country_flag = industrialisation_complete
+		}
 	}
 
 	priority = {
@@ -57,6 +102,12 @@ FIR_conquest_category = {
 
 	visible = {
 		original_tag = FIR
+		NOT = { has_country_flag = hide_mission_decisions }
+
+		has_country_flag = conquest_category_active
+		NOT = {
+			has_country_flag = conquest_category_complete
+		}
 	}
 
 	priority = {
@@ -93,6 +144,12 @@ FIR_outpost_category = {
 
 	visible = {
 		original_tag = FIR
+		NOT = { has_country_flag = hide_mission_decisions }
+
+		has_country_flag = outpost_active
+		NOT = {
+			has_country_flag = outpost_complete
+		}
 	}
 
 	priority = {
@@ -116,6 +173,12 @@ FIR_civil_decision_category = {
 
 	visible = {
 		original_tag = FIR
+		NOT = { has_country_flag = hide_mission_decisions }
+
+		has_country_flag = civil_category_active
+		NOT = {
+			has_country_flag = civil_category_complete
+		}
 	}
 
 	priority = {
@@ -142,6 +205,12 @@ FIR_colonies_category = {
 
 	visible = {
 		original_tag = FIR
+		NOT = { has_country_flag = hide_mission_decisions }
+
+		has_country_flag = colonies_category_active
+		NOT = {
+			has_country_flag = colonies_category_complete
+		}
 	}
 
 	on_map_area = {
@@ -242,6 +311,12 @@ FIR_dragon_category = {
 
 	visible = {
 		original_tag = FIR
+		NOT = { has_country_flag = hide_mission_decisions }
+
+		has_country_flag = dragon_active
+		NOT = {
+			has_country_flag = dragon_complete
+		}
 	}
 
 	priority = {
@@ -249,35 +324,6 @@ FIR_dragon_category = {
 		modifier = {
 			factor = 2
 			has_war = yes
-		}
-	}
-}
-
-FIR_royal_family_category = {
-	icon = GFX_decision_category_royal_family
-
-	#picture = GFX_decision_cat_fir_royal_family
-
-	scripted_gui = fire_family_ui
-
-	visible_when_empty = yes
-
-	allowed = {
-		original_tag = FIR
-	}
-
-	visible = {
-		original_tag = FIR
-	}
-
-	priority = {
-		base = 1150
-		modifier = {
-			factor = 100
-			has_country_leader = {
-			    name = "Empty Throne"
-			    ruling_only = yes
-			}
 		}
 	}
 }
