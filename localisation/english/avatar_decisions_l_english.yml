@@ -581,7 +581,8 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  NWT_hunters_mission_desc:0 "The more hunting, the bigger the feast, the higher the unification."
  NWT_hunters_decision:0 "Hunt in §Y[FROM.GetName]§!"
  NWT_hunters_decision_desc:0 "Scouts spottet a large animal herd in this area."
-
+ nwt_wood_raids:0 "Raid [FROM.GetName] For Wood"
+ nwt_wood_raids_desc:0 "We lack wood and the [FROM.owner.GetAdjective] have plenty in [FROM.GetName]. A little displeasure of the locals is nothing to worry about."
  NWT_appoint_unification_minister:0 "Appoint §cUnification§! Minister"
  NWT_appoint_unification_minister_desc:0 "The Unification is one of our highest goals. It needs organisation and central planning."
  

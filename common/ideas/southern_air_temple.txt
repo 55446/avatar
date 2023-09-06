@@ -436,7 +436,12 @@ ideas = {
 			allowed = {
 				OR = { tag = NAT tag = SAT }
 			}
-			available = { }
+			available = { 
+				custom_trigger_tooltip = {
+					tooltip = empty_tooltip_tt
+					NOT = {has_global_flag = avatar_cycle_broken}
+				}
+			}	
 			
 			
 			traits = { service_to_the_avatar }

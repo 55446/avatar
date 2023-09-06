@@ -13,7 +13,27 @@ on_actions = {
 				add_dynamic_modifier = { modifier = fast_manpower days = 10 }
 				add_dynamic_modifier = { modifier = population_resource_bought_on_market }
 			}
-
+			if = {
+				limit = {
+					has_start_date = 12.01.01
+					FIR = {
+						is_ai = yes
+					}
+				}
+				FIR = {
+					random_list = {
+						1 = {
+							set_country_flag = AI_FIR_will_select_northern_attack_plan
+						}
+						1 = {
+							set_country_flag = AI_FIR_will_select_central_attack_plan
+						}
+						1 = {
+							set_country_flag = AI_FIR_will_select_southern_attack_plan
+						}
+					}
+				}
+			}	
 			if = {
 				limit = {
 					has_start_date > 13.01.01

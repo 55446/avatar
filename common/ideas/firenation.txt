@@ -1186,7 +1186,12 @@ ideas = {
 			allowed = {
 				tag = FIR
 			}
-			available = { }
+			available = { 
+				custom_trigger_tooltip = {
+					tooltip = empty_tooltip_tt
+					NOT = {has_global_flag = avatar_cycle_broken}
+				}
+			}	
 			modifier = {
 				political_power_cost = 0.1
 				stability_factor = 0.1

@@ -76,6 +76,20 @@ ideas = {
 			ai_will_do = {
 				base = 0
 				modifier = {
+					num_of_civillian_factories > 20
+					add = 50
+				}
+				modifier = {
+					OR = {
+						has_idea = elite_education
+						has_idea = indoctrination
+					}
+					add = -50
+				}
+			}
+			ai_will_do = {
+				base = 0
+				modifier = {
 					num_of_civilian_factories > 20
 					add = 50
 				}

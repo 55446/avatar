@@ -815,86 +815,26 @@ NWT_tribe_union = {
 		allowed = {
 			tag = NWT
 		}
+		target_array = {owned_controlled_states }
+		target_trigger = {
+			FROM = {
+				is_fully_controlled_by = NWT
+				has_dynamic_modifier = { 
+					modifier = watertribe_barbarians
+				}
+			}
+		}
 		complete_effect = {
-			any_owned_state = {
-				limit = {
-					has_dynamic_modifier = {
+				FROM = {  
+					remove_dynamic_modifier = {
 						watertribe_barbarians
 					}
 				}
-				remove_dynamic_modifier = {
-					watertribe_barbarians
-				}	
 			}
-		}	
-	}
-#	NWT_hunt_barbarians_mission = {
-		#Activate this mmission if any owned state has barbarians rampant
-		#To complete, have troops in state
-		#When failed have a neighbouring state get barbarians rampant
-#		icon = watertribe_barbarians_icon
-#		allowed = {
-#			OR = {
-#				tag = NWT
-#				tag = SWT
-#			}
-#		}
-#		cancel_trigger = {	 
-#			NWT = {
-#						has_idea = one_tribe 
-#				}
-#		}	
-#		activation = {
-#			NWT = {
-#				any_owned_state = {
-#						has_dynamic_modifier = { modifier = watertribe_barbarians}
-#					}
-#				}
-#		}
-#		target_trigger = {
-#			has_dynamic_modifier = { modifier = watertribe_barbarians}
-#		}
-#		days_mission_timeout = 90
-#		available = {	#What you have to do to complete it.
-#			random_owned_state = {
-#				limit = {
-#					has_dynamic_modifier = { modifier = watertribe_barbarians}
-#				}
-#				army_manpower_in_state = {
-#					state = THIS
-#					amount = 240
-#				}
-#			}	
-#		}
-#		complete_effect = { #What happens if you complete it.
-#			FROM = {
-#				remove_dynamic_modifier = {
-#					modifier = watertribe_barbarians
-#				}
-#				add_dynamic_modifier = {
-#					modifier = watertribe_battling_barbarians
-#					days = 7
-#				}	
-#			}
-#		}
-#		timeout_effect = {	#What happens if you do not complete it.
-#			FROM = {
-#				random_neighbor_state = {
-#					limit = {
-#						OR = {
-#							is_controlled_by = NWT
-#							is_controlled_by = SWT
-#						}
-#					}
-#					add_dynamic_modifier = {
-#						modifier = watertribe_barbarians
-#					}
-#				} 
-#			}
-#		}
-	}
-
-}
+			on_map_mode = map_only
+		}
+		
+	}	
 
 
 

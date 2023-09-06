@@ -1,5 +1,5 @@
 ﻿l_english:
-  
+ empty_tooltip_tt:0 "testing" 
  regret_letting_roku_die_ttp:0 "Mutual exclusive with §HContinue Expansion Plans§!"
  continue_expansion_plans_ttp:0 "Mutual exclusive with §HRegret Letting Roku Die§!"
  age_4_tt:0 "is at least 4 years old"
@@ -33,7 +33,6 @@
  water_unity_large_opposition_tt:0 "Lose §R-10§! £water_unity_texticon  §cUnity§! for the tribe unification."
  water_unity_extreme_support_tt:0 "Gain §G+15§! £water_unity_texticon  §cUnity§! to unify the tribes."
  water_unity_extreme_opposition_tt:0 "Lose §R-15§! £water_unity_texticon  §cUnity§! for the tribe unification."
- watertribes_FIR_raids_tt:0 "Can only select §GLocal markets.§! \n Cannot reinhabit the air temples"
  reveal_avatar_aang_tt:0 "Aang will now be able to start his Jurney as the Avatar."
  gyatso_angry_tt:0 "§YGyatso§! will disapprove of this plan."
  aang_travel_date_tt:0 "This is the day of §YAangs§! scheduled departure!"
@@ -44,7 +43,7 @@
  recruitment_campaign_1_tt:0 "If we don´t prepare for whats coming, it might end in a disaster."
  dragons_angry_tt:0 "Dragons will be enraged and may §RDestroy Buildings§!!"
  dragons_friendly_tt:0 "Unlocks §YBefriend the Dragons§! Decisions.\nDragons will be happy and are more likely to §GJoin you§!!"
- industry_unlock_tt:0"Research §YUrban Revolution§! and §YProto-Industrialization§! to §Gunlock§! further Decisions."
+ industry_unlock_tt:0"Unlocks decisions to shape the future of the nation and lead it into the industrial aera."
  clear_funding_tt:0 "Remove the curent spending of §YTaxes§! and allows to change it."
  allow_faction_join_tt:0 "Modify §YRemote Isolation§! to allow joining factions."
  FIR_planned_invasion:0 "Will add a §YNational Spirit§! with attack boni against the selected area when completing the decision §YWar with the Earth Kingdom§!!"
@@ -59,5 +58,3 @@
  ear_castle_supply_extension:0 "Adds a supply extension to the Castle"
  ear_castle_harbor_extension:0 "Adds a harbor extension to the Castle"
  at_least_one_air_temple_has_survived_the_air_nomad_genocide_tt:0 "At least §Yone air temple§! has survived the Air Nomad genocide."
- can_reinhabit_territories_tt:0 "Can send parties to reinhabit territories."
- the_revolt_ends_tt:0 "The §Y[?ROOT.give_state_name.GetName]§! Revolt Ends"

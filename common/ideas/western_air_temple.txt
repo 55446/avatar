@@ -425,7 +425,12 @@ ideas = {
 			allowed = {
 				OR = { tag = WAT tag = EAT }
 			}
-			available = { }
+			available = { 
+				custom_trigger_tooltip = {
+					tooltip = empty_tooltip_tt
+					NOT = {has_global_flag = avatar_cycle_broken}
+				}
+			}	
 			modifier = {
 				political_power_factor = -0.1
 			}

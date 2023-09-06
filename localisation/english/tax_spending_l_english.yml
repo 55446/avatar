@@ -66,3 +66,5 @@
  very_high_tax_production_spendings_desc:0 "Use our very large budget to fund the military."
 
  cancel_spending_ttp:0 "Changing the spending will cost §R50§! Political Power!"
+enact_land_tax:0 "Enact Land Tax"
+enact_land_tax_desc:0 "The nobility must be made to pay their share of the tax burden."

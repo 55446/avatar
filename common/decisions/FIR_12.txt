@@ -638,7 +638,7 @@ FIR_conquest_category = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				has_war = yes
+				has_country_flag = AI_FIR_will_select_northern_attack_plan
 				add = 100
 			}
 			modifier = {
@@ -714,15 +714,15 @@ FIR_conquest_category = {
 		custom_cost_text = manufactory_5
 
 		fire_only_once = yes
- 		ai_will_do = {
-			base = 100
+		ai_will_do = {
+			base = 0
 			modifier = {
-				has_war = yes
-				factor = 100
+				has_country_flag = AI_FIR_will_select_central_attack_plan
+				add = 100
 			}
 			modifier = {
 				has_active_mission = rescue_fire_citizen_mission
-				factor = 0
+				factor = 100
 			}
 		}
 	}
@@ -796,8 +796,12 @@ FIR_conquest_category = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				has_war = yes
-				add = 50
+				has_country_flag = AI_FIR_will_select_southern_attack_plan
+				add = 100
+			}
+			modifier = {
+				has_active_mission = rescue_fire_citizen_mission
+				factor = 100
 			}
 		}
 	}
