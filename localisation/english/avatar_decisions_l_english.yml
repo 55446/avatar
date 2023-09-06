@@ -479,6 +479,8 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  TARGETED_rescue_struggling_carpenters_desc:0 "It is outrageous, that many of the artisans who build up this country now live in poverty and without work. If we support them, they can help us in the years to come."
  TARGETED_rescue_struggling_masons:0 "Rescue Struggling Masons in [FROM.GetName]"
  TARGETED_rescue_struggling_masons_desc:0 "It is outrageous, that many of the artisans who build up this country now live in poverty and without work. If we support them, they can help us in the years to come."
+ TARGETED_patronise_local_enterprises:0 "Patronise Local Enterpises in [FROM.GetName]"
+ TARGETED_patronise_local_enterprises_desc:0 "By providing our vigilant tradespeople with a lump starting sum, our nation's industries can benefit from new resources."
  distribute_land_charters:0 "Distribute Land Charters"
  distribute_land_charters_desc:0 "The government owns many acres of undeveloped land, perhaps it is time to distribute them to competent locals."
  patrol_trade_routes:0 "Patrol Trade Routes"
