@@ -665,6 +665,8 @@ technologies = {
 		craftsman_factor = -0.05
 		smith_factor = -0.05
 		harbour_worker_factor = -0.05
+
+		production_factory_max_efficiency_factor = 0.025
 		
 		path = {
 			leads_to_tech = production_1
@@ -705,10 +707,9 @@ technologies = {
 		industrial_capacity_factory = 0.05
 		smith_factor = -0.05
 
-		on_research_complete = {
-			custom_effect_tooltip = smithy_output
-			add_to_variable = { smithy_output = 1 }
-		}
+		production_factory_max_efficiency_factor = 0.025
+
+		smithy_output = 1
 		
 		path = {
 			leads_to_tech = production_2
@@ -773,10 +774,9 @@ technologies = {
 		industrial_capacity_factory = 0.05
 		smith_factor = -0.05
 
-		on_research_complete = {
-			custom_effect_tooltip = smithy_output
-			add_to_variable = { smithy_output = 1 }
-		}
+		production_factory_max_efficiency_factor = 0.025
+
+		smithy_output = 1
 		
 		path = {
 			leads_to_tech = production_3
@@ -841,13 +841,10 @@ technologies = {
 		industrial_capacity_factory = 0.05
 		smith_factor = -0.05
 
-		on_research_complete = {
-			custom_effect_tooltip = smithy_output
-			add_to_variable = { smithy_output = 1 }
+		production_factory_max_efficiency_factor = 0.025
 
-			custom_effect_tooltip = smithy_output_2
-			add_to_variable = { smithy_output_2 = 1 }
-		}
+		smithy_output = 1
+		smithy_output_2 = 1
 		
 		path = {
 			leads_to_tech = production_4
@@ -915,10 +912,9 @@ technologies = {
 		smith_factor = -0.075
 		industrial_worker_factor = -0.01
 
-		on_research_complete = {
-			custom_effect_tooltip = factory_output
-			add_to_variable = { factory_output = 1 }
-		}
+		production_factory_max_efficiency_factor = 0.025
+
+		factory_output = 1
 		
 		path = {
 			leads_to_tech = production_5
@@ -987,10 +983,9 @@ technologies = {
 		smith_factor = -0.075
 		industrial_worker_factor = -0.01
 
-		on_research_complete = {
-			custom_effect_tooltip = factory_output
-			add_to_variable = { factory_output = 1 }
-		}
+		production_factory_max_efficiency_factor = 0.025
+
+		factory_output = 1
 		
 		path = {
 			leads_to_tech = production_6
@@ -1059,10 +1054,9 @@ technologies = {
 		smith_factor = -0.075
 		industrial_worker_factor = -0.01
 
-		on_research_complete = {
-			custom_effect_tooltip = factory_output
-			add_to_variable = { factory_output = 1 }
-		}
+		production_factory_max_efficiency_factor = 0.025
+
+		factory_output = 1
 		
 		path = {
 			leads_to_tech = production_7
@@ -1126,10 +1120,9 @@ technologies = {
 		smith_factor = -0.075
 		industrial_worker_factor = -0.01
 
-		on_research_complete = {
-			custom_effect_tooltip = factory_output
-			add_to_variable = { factory_output = 1 }
-		}
+		production_factory_max_efficiency_factor = 0.025
+
+		factory_output = 1
 		
 		research_cost = 2
 		#start_year = 78
@@ -1180,7 +1173,10 @@ technologies = {
 
 	gathering_tech_1 = {
 
-		local_resources_factor = 0.05
+		#local_resources_factor = 0.05
+
+		grain_throughput = 0.05
+		food_throughput = 0.05
 
 		farmer_factor = 0.75
 		weaver_factor = 0.5
@@ -1234,7 +1230,12 @@ technologies = {
 	}
 	gathering_tech_2 = {
 
-		local_resources_factor = 0.05
+		#local_resources_factor = 0.05
+
+		animal_products_throughput = 0.05
+		food_throughput = 0.05
+		minerals_throughput = 0.05
+		bricks_throughput = 0.05
 
 		fisher_factor = 0.75
 		rancher_factor = 0.5
@@ -1268,7 +1269,12 @@ technologies = {
 	}
 	gathering_tech_3 = {
 
-		local_resources_factor = 0.05
+		#local_resources_factor = 0.05
+
+		animal_products_throughput = 0.05
+		food_throughput = 0.05
+		minerals_throughput = 0.05
+		bricks_throughput = 0.05
 
 		shopkeeper_factor = 0.75
 		rancher_factor = 0.5
@@ -1302,7 +1308,12 @@ technologies = {
 	}
 	gathering_tech_4 = {
 
-		local_resources_factor = 0.05
+		#local_resources_factor = 0.05
+
+		iron_throughput = 0.05
+		wood_throughput = 0.05
+		minerals_throughput = 0.05
+		bricks_throughput = 0.05
 
 		miner_factor = 1
 		craftsman_factor = 0.5
@@ -1336,7 +1347,12 @@ technologies = {
 	}
 	gathering_tech_5 = {
 
-		local_resources_factor = 0.05
+		#local_resources_factor = 0.05
+
+		iron_throughput = 0.05
+		wood_throughput = 0.05
+		minerals_throughput = 0.05
+		animal_products_throughput = 0.05
 
 		lumberjack_factor = 0.5
 		industrial_worker_factor = 0.1
@@ -1369,7 +1385,15 @@ technologies = {
 	}
 	gathering_tech_6 = {
 
-		local_resources_factor = 0.05
+		#local_resources_factor = 0.05
+
+		iron_throughput = 0.05
+		wood_throughput = 0.05
+		minerals_throughput = 0.05
+		planks_throughput = 0.05
+
+		lumberjack_factor = 0.25
+		industrial_worker_factor = 0.25
 	
 		path = {
 			leads_to_tech = gathering_tech_7
@@ -1397,7 +1421,15 @@ technologies = {
 	}
 	gathering_tech_7 = {
 
-		local_resources_factor = 0.05
+		#local_resources_factor = 0.05
+
+		iron_throughput = 0.05
+		wood_throughput = 0.05
+		minerals_throughput = 0.05
+		planks_throughput = 0.05
+
+		lumberjack_factor = 0.25
+		industrial_worker_factor = 0.25
 	
 		path = {
 			leads_to_tech = gathering_tech_8
@@ -1425,7 +1457,15 @@ technologies = {
 	}
 	gathering_tech_8 = {
 
-		local_resources_factor = 0.05
+		#local_resources_factor = 0.05
+
+		iron_throughput = 0.05
+		wood_throughput = 0.05
+		minerals_throughput = 0.05
+		planks_throughput = 0.05
+
+		lumberjack_factor = 0.25
+		industrial_worker_factor = 0.25
 		
 		research_cost = 2
 		#start_year = 84
@@ -1460,14 +1500,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = lumber_mill
-				resource = aluminium
-				amount = 2
-			}
-			add_to_variable = { lumber_mill_output = 2 }
-		}
+		lumber_mill_output = 1
 		
 		research_cost = 2
 		#start_year = 6
@@ -1493,21 +1526,8 @@ technologies = {
 
 		craftsman_factor = -0.025
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = carpentry
-				resource = planks_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output = 1 }
-
-			modify_building_resources = {
-				building = carpentry
-				resource = consumer_goods_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output_2 = 1 }
-		}
+		carpentry_output = 1
+		carpentry_output_2 = 1
 		
 		research_cost = 2
 		#start_year = 12
@@ -1543,14 +1563,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = lumber_mill
-				resource = aluminium
-				amount = 2
-			}
-			add_to_variable = { lumber_mill_output = 2 }
-		}
+		lumber_mill_output = 1
 		
 		research_cost = 2
 		#start_year = 18
@@ -1576,21 +1589,8 @@ technologies = {
 
 		craftsman_factor = -0.025
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = carpentry
-				resource = planks_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output = 1 }
-
-			modify_building_resources = {
-				building = carpentry
-				resource = consumer_goods_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output_2 = 1 }
-		}
+		carpentry_output = 1
+		carpentry_output_2 = 1
 		
 		research_cost = 2
 		#start_year = 24
@@ -1625,14 +1625,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = lumber_mill
-				resource = aluminium
-				amount = 2
-			}
-			add_to_variable = { lumber_mill_output = 2 }
-		}
+		lumber_mill_output = 1
 		
 		research_cost = 2
 		#start_year = 30
@@ -1658,21 +1651,8 @@ technologies = {
 
 		craftsman_factor = -0.025
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = carpentry
-				resource = planks_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output = 1 }
-
-			modify_building_resources = {
-				building = carpentry
-				resource = consumer_goods_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output_2 = 1 }
-		}
+		carpentry_output = 1
+		carpentry_output_2 = 1
 		
 		research_cost = 2
 		#start_year = 36
@@ -1707,14 +1687,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = lumber_mill
-				resource = aluminium
-				amount = 2
-			}
-			add_to_variable = { lumber_mill_output = 2 }
-		}
+		lumber_mill_output = 1
 		
 		research_cost = 2
 		#start_year = 42
@@ -1740,21 +1713,8 @@ technologies = {
 
 		craftsman_factor = -0.025
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = carpentry
-				resource = planks_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output = 1 }
-
-			modify_building_resources = {
-				building = carpentry
-				resource = luxury_goods_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output_3 = 1 }
-		}
+		carpentry_output = 1
+		carpentry_output_3 = 1
 		
 		research_cost = 2
 		#start_year = 48
@@ -1789,14 +1749,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = lumber_mill
-				resource = aluminium
-				amount = 2
-			}
-			add_to_variable = { lumber_mill_output = 2 }
-		}
+		lumber_mill_output = 1
 		
 		research_cost = 2
 		#start_year = 54
@@ -1822,21 +1775,8 @@ technologies = {
 		
 		craftsman_factor = -0.025
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = carpentry
-				resource = planks_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output = 1 }
-
-			modify_building_resources = {
-				building = carpentry
-				resource = luxury_goods_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output_3 = 1 }
-		}
+		carpentry_output = 1
+		carpentry_output_3 = 1
 		
 		research_cost = 2
 		#start_year = 60
@@ -1867,14 +1807,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = lumber_mill
-				resource = aluminium
-				amount = 2
-			}
-			add_to_variable = { lumber_mill_output = 2 }
-		}
+		lumber_mill_output = 1
 		
 		research_cost = 2
 		#start_year = 66
@@ -1900,21 +1833,8 @@ technologies = {
 
 		craftsman_factor = -0.025
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = carpentry
-				resource = planks_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output = 1 }
-
-			modify_building_resources = {
-				building = carpentry
-				resource = luxury_goods_resource
-				amount = 1
-			}
-			add_to_variable = { carpentry_output_3 = 1 }
-		}
+		carpentry_output = 1
+		carpentry_output_3 = 1
 		
 		research_cost = 2
 		#start_year = 72
@@ -1954,14 +1874,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = quarry
-				resource = stone
-				amount = 3
-			}
-			add_to_variable = { quarry_output = 3 }
-		}
+		quarry_output = 2
 		
 		research_cost = 2
 		#start_year = 6
@@ -1987,14 +1900,7 @@ technologies = {
 
 		craftsman_factor = -0.025
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = masonry
-				resource = bricks_resource
-				amount = 1
-			}
-			add_to_variable = { masonry_output = 1 }
-		}
+		masonry_output = 1
 		
 		research_cost = 2
 		#start_year = 12
@@ -2029,14 +1935,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = quarry
-				resource = stone
-				amount = 3
-			}
-			add_to_variable = { quarry_output = 3 }
-		}
+		quarry_output = 2
 
 		research_cost = 2
 		#start_year = 18
@@ -2062,14 +1961,7 @@ technologies = {
 
 		craftsman_factor = -0.025
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = masonry
-				resource = bricks_resource
-				amount = 1
-			}
-			add_to_variable = { masonry_output = 1 }
-		}
+		masonry_output = 1
 		
 		research_cost = 2
 		#start_year = 24
@@ -2104,14 +1996,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = quarry
-				resource = stone
-				amount = 3
-			}
-			add_to_variable = { quarry_output = 3 }
-		}
+		quarry_output = 2
 
 		research_cost = 2
 		#start_year = 30
@@ -2137,15 +2022,8 @@ technologies = {
 
 		craftsman_factor = -0.025
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = masonry
-				resource = bricks_resource
-				amount = 1
-			}
-			add_to_variable = { masonry_output = 1 }
-		}
-		
+		masonry_output = 1
+
 		research_cost = 2
 		#start_year = 36
 		folder = {
@@ -2179,14 +2057,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = quarry
-				resource = stone
-				amount = 3
-			}
-			add_to_variable = { quarry_output = 3 }
-		}
+		quarry_output = 2
 
 		research_cost = 2
 		#start_year = 42
@@ -2212,14 +2083,7 @@ technologies = {
 
 		craftsman_factor = -0.025
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = masonry
-				resource = bricks_resource
-				amount = 1
-			}
-			add_to_variable = { masonry_output = 1 }
-		}
+		masonry_output = 1
 		
 		research_cost = 2
 		#start_year = 48
@@ -2254,14 +2118,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = quarry
-				resource = stone
-				amount = 3
-			}
-			add_to_variable = { quarry_output = 3 }
-		}
+		quarry_output = 2
 
 		research_cost = 2
 		#start_year = 54
@@ -2287,14 +2144,7 @@ technologies = {
 
 		craftsman_factor = -0.025
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = masonry
-				resource = bricks_resource
-				amount = 1
-			}
-			add_to_variable = { masonry_output = 1 }
-		}
+		masonry_output = 1
 		
 		research_cost = 2
 		#start_year = 60
@@ -2325,14 +2175,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = quarry
-				resource = stone
-				amount = 3
-			}
-			add_to_variable = { quarry_output = 3 }
-		}
+		quarry_output = 2
 
 		research_cost = 2
 		#start_year = 66
@@ -2358,14 +2201,7 @@ technologies = {
 
 		craftsman_factor = -0.025
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = masonry
-				resource = bricks_resource
-				amount = 1
-			}
-			add_to_variable = { masonry_output = 1 }
-		}
+		masonry_output = 1
 		
 		research_cost = 2
 		#start_year = 72
@@ -2399,7 +2235,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		ration_capacity_factor = 0.05
+		ration_capacity_factor = 0.1
 		
 		research_cost = 2
 		#start_year = 6
@@ -2432,7 +2268,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		ration_capacity_factor = 0.05
+		ration_capacity_factor = 0.1
 		
 		research_cost = 2
 		#start_year = 18
@@ -2465,7 +2301,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		ration_capacity_factor = 0.05
+		ration_capacity_factor = 0.1
 		
 		research_cost = 2
 		#start_year = 30
@@ -2498,7 +2334,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		ration_capacity_factor = 0.05
+		ration_capacity_factor = 0.1
 		
 		research_cost = 2
 		#start_year = 42
@@ -2531,7 +2367,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		ration_capacity_factor = 0.05
+		ration_capacity_factor = 0.1
 		
 		research_cost = 2
 		#start_year = 54
@@ -2564,7 +2400,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		ration_capacity_factor = 0.05
+		ration_capacity_factor = 0.1
 		
 		research_cost = 2
 		#start_year = 66
@@ -2597,7 +2433,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		ration_capacity_factor = 0.05
+		ration_capacity_factor = 0.1
 		
 		research_cost = 2
 		#start_year = 78
@@ -2626,7 +2462,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		ration_capacity_factor = 0.05
+		ration_capacity_factor = 0.1
 		
 		research_cost = 2
 		#start_year = 90
@@ -2653,14 +2489,7 @@ technologies = {
 
 		fisher_factor = -0.05
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = fishing_stand
-				resource = food_resource
-				amount = 1
-			}
-			add_to_variable = { fishing_stand_output = 1 }
-		}
+		fishing_stand_output = 1
 		
 		research_cost = 2
 		#start_year = 6
@@ -2686,14 +2515,7 @@ technologies = {
 
 		miller_factor = -0.05
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mill
-				resource = food_resource
-				amount = 2
-			}
-			add_to_variable = { mill_output = 2 }
-		}
+		mill_output = 2
 		
 		research_cost = 2
 		#start_year = 18
@@ -2719,14 +2541,7 @@ technologies = {
 
 		fisher_factor = -0.1
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = fishing_stand
-				resource = food_resource
-				amount = 1
-			}
-			add_to_variable = { fishing_stand_output = 1 }
-		}
+		fishing_stand_output = 1
 		
 		research_cost = 2
 		#start_year = 30
@@ -2752,14 +2567,7 @@ technologies = {
 
 		miller_factor = -0.1
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mill
-				resource = food_resource
-				amount = 2
-			}
-			add_to_variable = { mill_output = 2 }
-		}
+		mill_output = 2
 		
 		research_cost = 2
 		#start_year = 42
@@ -2785,14 +2593,7 @@ technologies = {
 
 		fisher_factor = -0.15
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = fishing_stand
-				resource = food_resource
-				amount = 1
-			}
-			add_to_variable = { fishing_stand_output = 1 }
-		}
+		fishing_stand_output = 1
 		
 		research_cost = 2
 		#start_year = 54
@@ -2818,14 +2619,7 @@ technologies = {
 
 		miller_factor = -0.15
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mill
-				resource = food_resource
-				amount = 2
-			}
-			add_to_variable = { mill_output = 2 }
-		}
+		mill_output = 2
 		
 		research_cost = 2
 		#start_year = 66
@@ -2851,14 +2645,7 @@ technologies = {
 
 		fisher_factor = -0.2
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = fishing_stand
-				resource = food_resource
-				amount = 1
-			}
-			add_to_variable = { fishing_stand_output = 1 }
-		}
+		fishing_stand_output = 1
 		
 		research_cost = 2
 		#start_year = 78
@@ -2884,14 +2671,7 @@ technologies = {
 
 		miller_factor = -0.2
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mill
-				resource = food_resource
-				amount = 2
-			}
-			add_to_variable = { mill_output = 2 }
-		}
+		mill_output = 2
 		
 		research_cost = 2
 		#start_year = 90
@@ -2933,9 +2713,6 @@ technologies = {
 
 		harvesting_factor = 0.05
 		
-		on_research_complete = {
-			
-		}
 		
 		research_cost = 2
 		#start_year = 6
@@ -2962,21 +2739,8 @@ technologies = {
 
 		farmer_factor = -0.05
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = farm
-				resource = oil
-				amount = 2
-			}
-			add_to_variable = { farm_output = 2 }
-
-			modify_building_resources = {
-				building = farm
-				resource = food_resource
-				amount = 1
-			}
-			add_to_variable = { farm_output_2 = 1 }
-		}
+		farm_output = 1
+		farm_output_2 = 1
 		
 		research_cost = 2
 		#start_year = 12
@@ -3015,14 +2779,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = ranch
-				resource = chromium
-				amount = 2
-			}
-			add_to_variable = { ranch_output = 2 }
-		}
+		ranch_output = 1
 		
 		path = {
 			leads_to_tech = textile_1
@@ -3059,14 +2816,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = ranch
-				resource = chromium
-				amount = 2
-			}
-			add_to_variable = { ranch_output = 2 }
-		}
+		ranch_output = 1
 		
 		research_cost = 2
 		#start_year = 18
@@ -3098,21 +2848,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = ranch
-				resource = chromium
-				amount = 2
-			}
-			add_to_variable = { ranch_output = 2 }
-
-			modify_building_resources = {
-				building = ranch
-				resource = food_resource
-				amount = 3
-			}
-			add_to_variable = { ranch_output_2 = 3 }
-		}
+		ranch_output = 1
+		ranch_output_2 = 2
 		
 		research_cost = 2
 		#start_year = 30
@@ -3144,14 +2881,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = ranch
-				resource = chromium
-				amount = 2
-			}
-			add_to_variable = { ranch_output = 2 }
-		}
+		ranch_output = 1
 		
 		research_cost = 2
 		#start_year = 42
@@ -3183,14 +2913,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = ranch
-				resource = chromium
-				amount = 2
-			}
-			add_to_variable = { ranch_output = 2 }
-		}
+		ranch_output = 1
 		
 		research_cost = 2
 		#start_year = 54
@@ -3217,21 +2940,8 @@ technologies = {
 
 		rancher_factor = -0.05
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = ranch
-				resource = chromium
-				amount = 2
-			}
-			add_to_variable = { ranch_output = 2 }
-
-			modify_building_resources = {
-				building = ranch
-				resource = food_resource
-				amount = 3
-			}
-			add_to_variable = { ranch_output_2 = 3 }
-		}
+		ranch_output = 1
+		ranch_output_2 = 2
 		
 		research_cost = 2
 		#start_year = 66
@@ -3264,14 +2974,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mine
-				resource = iron
-				amount = 1
-			}
-			add_to_variable = { mine_output1 = 1 }
-		}
+		mine_output1 = 1
 		
 		research_cost = 2
 		#start_year = 12
@@ -3311,14 +3014,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mine
-				resource = rubber
-				amount = 1
-			}
-			add_to_variable = { mine_output2 = 1 }
-		}
+		mine_output2 = 1
 		
 		research_cost = 2
 		#start_year = 36
@@ -3512,20 +3208,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = crop_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { crop_weaving_output = 3 }
-			modify_building_resources = {
-				building = animal_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { animal_weaving_output = 3 }
-		}
+		crop_weaving_output = 2
+		animal_weaving_output = 2
 		
 		research_cost = 2
 		#start_year = 12
@@ -3556,20 +3240,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = crop_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { crop_weaving_output = 3 }
-			modify_building_resources = {
-				building = animal_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { animal_weaving_output = 3 }
-		}
+		crop_weaving_output = 2
+		animal_weaving_output = 2
 		
 		research_cost = 2
 		#start_year = 24
@@ -3600,20 +3272,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = crop_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { crop_weaving_output = 3 }
-			modify_building_resources = {
-				building = animal_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { animal_weaving_output = 3 }
-		}
+		crop_weaving_output = 2
+		animal_weaving_output = 2
 		
 		research_cost = 2
 		#start_year = 36
@@ -3644,20 +3304,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = crop_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { crop_weaving_output = 3 }
-			modify_building_resources = {
-				building = animal_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { animal_weaving_output = 3 }
-		}
+		crop_weaving_output = 2
+		animal_weaving_output = 2
 		
 		research_cost = 2
 		#start_year = 48
@@ -3688,20 +3336,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = crop_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { crop_weaving_output = 3 }
-			modify_building_resources = {
-				building = animal_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { animal_weaving_output = 3 }
-		}
+		crop_weaving_output = 2
+		animal_weaving_output = 2
 		
 		research_cost = 2
 		#start_year = 60
@@ -3727,20 +3363,8 @@ technologies = {
 
 		weaver_factor = -0.1
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = crop_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { crop_weaving_output = 3 }
-			modify_building_resources = {
-				building = animal_weaving
-				resource = tungsten
-				amount = 3
-			}
-			add_to_variable = { animal_weaving_output = 3 }
-		}
+		crop_weaving_output = 2
+		animal_weaving_output = 2
 		
 		research_cost = 2
 		#start_year = 72
@@ -3778,9 +3402,6 @@ technologies = {
 
 		harvesting_factor = 0.05
 		
-		on_research_complete = {
-			
-		}
 		
 		research_cost = 2
 		#start_year = 18
@@ -3812,21 +3433,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = farm
-				resource = oil
-				amount = 2
-			}
-			add_to_variable = { farm_output = 2 }
-
-			modify_building_resources = {
-				building = farm
-				resource = food_resource
-				amount = 1
-			}
-			add_to_variable = { farm_output_2 = 1 }
-		}
+		farm_output = 1
 		
 		research_cost = 2
 		#start_year = 24
@@ -3864,14 +3471,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mine
-				resource = iron
-				amount = 2
-			}
-			add_to_variable = { mine_output1 = 2 }
-		}
+		mine_output1 = 1
 		
 		research_cost = 2
 		#start_year = 24
@@ -3979,10 +3579,6 @@ technologies = {
 
 		harvesting_factor = 0.05
 		
-		on_research_complete = {
-			
-		}
-		
 		research_cost = 2
 		#start_year = 30
 		folder = {
@@ -4008,21 +3604,8 @@ technologies = {
 
 		farmer_factor = -0.05
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = farm
-				resource = oil
-				amount = 2
-			}
-			add_to_variable = { farm_output = 2 }
-
-			modify_building_resources = {
-				building = farm
-				resource = food_resource
-				amount = 1
-			}
-			add_to_variable = { farm_output_2 = 1 }
-		}
+		farm_output = 1
+		farm_output_2 = 1
 		
 		research_cost = 2
 		#start_year = 36
@@ -4056,14 +3639,7 @@ technologies = {
 		}
 		
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mine
-				resource = iron
-				amount = 3
-			}
-			add_to_variable = { mine_output1 = 3 }
-		}
+		mine_output1 = 1
 		
 		research_cost = 2
 		#start_year = 36
@@ -4099,14 +3675,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mine
-				resource = rubber
-				amount = 1
-			}
-			add_to_variable = { mine_output2 = 1 }
-		}
+		mine_output2 = 1
 		
 		research_cost = 2
 		#start_year = 60
@@ -4166,9 +3735,6 @@ technologies = {
 
 		harvesting_factor = 0.05
 		
-		on_research_complete = {
-			
-		}
 		
 		research_cost = 2
 		#start_year = 42
@@ -4195,21 +3761,7 @@ technologies = {
 
 		farmer_factor = -0.05
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = farm
-				resource = oil
-				amount = 2
-			}
-			add_to_variable = { farm_output = 2 }
-
-			modify_building_resources = {
-				building = farm
-				resource = food_resource
-				amount = 1
-			}
-			add_to_variable = { farm_output_2 = 1 }
-		}
+		farm_output = 1
 		
 		research_cost = 2
 		#start_year = 48
@@ -4246,14 +3798,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mine
-				resource = iron
-				amount = 4
-			}
-			add_to_variable = { mine_output1 = 4 }
-		}
+		mine_output1 = 1
 		
 		research_cost = 2
 		#start_year = 48
@@ -4289,14 +3834,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mine
-				resource = rubber
-				amount = 1
-			}
-			add_to_variable = { mine_output2 = 1 }
-		}
+		mine_output2 = 1
 		
 		research_cost = 2
 		#start_year = 72
@@ -4356,10 +3894,6 @@ technologies = {
 
 		harvesting_factor = 0.05
 		
-		on_research_complete = {
-			
-		}
-		
 		research_cost = 2
 		#start_year = 54
 		folder = {
@@ -4386,21 +3920,8 @@ technologies = {
 
 		farmer_factor = -0.05
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = farm
-				resource = oil
-				amount = 2
-			}
-			add_to_variable = { farm_output = 2 }
-
-			modify_building_resources = {
-				building = farm
-				resource = food_resource
-				amount = 1
-			}
-			add_to_variable = { farm_output_2 = 1 }
-		}
+		farm_output = 1
+		farm_output_2 = 1
 		
 		research_cost = 2
 		#start_year = 60
@@ -4433,14 +3954,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mine
-				resource = iron
-				amount = 5
-			}
-			add_to_variable = { mine_output1 = 5 }
-		}
+		mine_output1 = 2
 		
 		research_cost = 2
 		#start_year = 60
@@ -4474,10 +3988,6 @@ technologies = {
 
 		harvesting_factor = 0.05
 		
-		on_research_complete = {
-			
-		}
-		
 		research_cost = 2
 		#start_year = 66
 		folder = {
@@ -4504,21 +4014,7 @@ technologies = {
 
 		farmer_factor = -0.05
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = farm
-				resource = oil
-				amount = 2
-			}
-			add_to_variable = { farm_output = 2 }
-
-			modify_building_resources = {
-				building = farm
-				resource = food_resource
-				amount = 1
-			}
-			add_to_variable = { farm_output_2 = 1 }
-		}
+		farm_output = 2
 		
 		research_cost = 2
 		#start_year = 72
@@ -4546,14 +4042,7 @@ technologies = {
 
 		miner_factor = -0.05
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = mine
-				resource = iron
-				amount = 6
-			}
-			add_to_variable = { mine_output1 = 6 }
-		}
+		mine_output1 = 2
 		
 		research_cost = 2
 		#start_year = 72
@@ -4585,14 +4074,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = steelworks
-				resource = steel
-				amount = 2
-			}
-			add_to_variable = { steelworks_output = 2 }
-		}
+		steelworks_output = 2
 		
 		research_cost = 2
 		#start_year = 54
@@ -4624,14 +4106,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = steelworks
-				resource = steel
-				amount = 3
-			}
-			add_to_variable = { steelworks_output = 3 }
-		}
+		steelworks_output = 3
 		
 		research_cost = 2
 		#start_year = 66
@@ -4667,14 +4142,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = steelworks
-				resource = steel
-				amount = 5
-			}
-			add_to_variable = { steelworks_output = 5 }
-		}
+		steelworks_output = 4
 		
 		research_cost = 2
 		#start_year = 78
@@ -4706,20 +4174,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = steelworks
-				resource = steel
-				amount = 6
-			}
-			add_to_variable = { steelworks_output = 6 }
-			modify_building_resources = {
-				building = steel_beam_factory
-				resource = steel_beams_resource
-				amount = 3
-			}
-			add_to_variable = { steel_beam_factory_output = 3 }
-		}
+		steelworks_output = 6
+		steel_beam_factory_output = 3
 		
 		XOR = {
 			smelting_r1
@@ -4755,14 +4211,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = steelworks
-				resource = steel
-				amount = 10
-			}
-			add_to_variable = { steelworks_output = 10 }
-		}
+		steelworks_output = 10
 		
 		XOR = {
 			smelting_l1
@@ -4793,20 +4242,8 @@ technologies = {
 
 		industrial_worker_factor = -0.05
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = steelworks
-				resource = steel
-				amount = 6
-			}
-			add_to_variable = { steelworks_output = 6 }
-			modify_building_resources = {
-				building = steel_beam_factory
-				resource = steel_beams_resource
-				amount = 3
-			}
-			add_to_variable = { steel_beam_factory_output = 3 }
-		}
+		steelworks_output = 6
+		steel_beam_factory_output = 3
 		
 		research_cost = 2
 		#start_year = 90
@@ -4833,14 +4270,7 @@ technologies = {
 
 		industrial_worker_factor = -0.05
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = steelworks
-				resource = steel
-				amount = 10
-			}
-			add_to_variable = { steelworks_output = 10 }
-		}
+		steelworks_output = 10
 		
 		research_cost = 2
 		#start_year = 90

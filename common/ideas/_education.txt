@@ -111,13 +111,13 @@ ideas = {
 
 			visible = {
 				NOT = {
-					has_idea = water_nation
+					has_dynamic_modifier = { modifier = water_nation }
 				}
 			}
 			
 			available = {
 				NOT = {
-					has_idea = water_nation
+					has_dynamic_modifier = { modifier = water_nation }
 				}
 				
 			}
@@ -141,11 +141,11 @@ ideas = {
 			level = 4
 
 			visible = {
-				has_idea = water_nation
+				has_dynamic_modifier = { modifier = water_nation }
 			}
 			
 			available = {
-				has_idea = water_nation
+				has_dynamic_modifier = { modifier = water_nation }
 			}
 		
 			modifier = {

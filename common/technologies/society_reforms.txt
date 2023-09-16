@@ -19,7 +19,7 @@ technologies = {
 		#production_factory_max_efficiency_factor = 0.02
 		global_building_slots_factor = 0.06
 		production_factory_efficiency_gain_factor = 0.05
-		peasant_food_factor = 0.05
+		peasant_output_factor = 0.05
 		
 		research_cost = 2.5
 		#start_year = 1
@@ -139,8 +139,8 @@ technologies = {
 	
 	progressive_economy_0 = {
 	
-		production_factory_efficiency_gain_factor = 0.04
-		production_factory_max_efficiency_factor = 0.04
+		production_factory_efficiency_gain_factor = 0.1
+		production_factory_max_efficiency_factor = 0.025
 		
 		research_cost = 2.5
 		#start_year = 8
@@ -169,22 +169,10 @@ technologies = {
 	
 	progressive_resources_0 = {
 	
-		on_research_complete = {
-			modify_building_resources = {
-				building = farm
-				resource = oil
-				amount = 5
-			}
-			add_to_variable = { farm_output = 5 }
-			modify_building_resources = {
-				building = farm
-				resource = food_resource
-				amount = 1
-			}
-			add_to_variable = { farm_output_2 = 1 }
-		}
+		farm_output = 2
+		farm_output_2 = 1
 
-		local_resources_factor = 0.06
+		#local_resources_factor = 0.06
 		farmer_factor = 1
 
 		research_cost = 2.5
@@ -217,6 +205,7 @@ technologies = {
 	progressive_education_0 = {
 		
 		research_speed_factor = 0.08
+		knowledge_gain = 5
 		
 		path = {
 			leads_to_tech = reform_1
@@ -311,6 +300,7 @@ technologies = {
 		
 		political_power_gain = 0.1
 		research_speed_factor = 0.04
+		knowledge = 0.05
 		
 		path = {
 			leads_to_tech = reform_1
@@ -353,9 +343,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		production_factory_max_efficiency_factor = 0.02
+		production_factory_max_efficiency_factor = 0.025
 		global_building_slots_factor = 0.08
-		peasant_food_factor = 0.1
+		peasant_output_factor = 0.1
 		
 		research_cost = 2.5
 		#start_year = 16
@@ -403,6 +393,7 @@ technologies = {
 			conservative_1
 		}
 		
+		peasant_opinion = 10
 		political_power_gain = 0.3
 		industry_free_repair_factor = 0.15
 		
@@ -449,6 +440,7 @@ technologies = {
 			progressive_1
 		}
 		
+		nobility_opinion = 10
 		political_power_gain = 0.5
 		max_command_power = 20
 		weekly_centralisation = 0.02
@@ -482,7 +474,7 @@ technologies = {
 	progressive_economy_1 = {
 	
 		political_power_gain = 0.2
-		production_factory_max_efficiency_factor = 0.04
+		production_factory_max_efficiency_factor = 0.025
 		
 		research_cost = 2.5
 		#start_year = 24
@@ -511,7 +503,7 @@ technologies = {
 	
 	progressive_resources_1 = {
 	
-		fuel_gain_factor = 0.06
+		peasant_food_factor = 0.2
 		production_lack_of_resource_penalty_factor = -0.5
 
 		research_cost = 2.5
@@ -547,6 +539,7 @@ technologies = {
 		}
 		
 		research_speed_factor = 0.08
+		knowledge = 0.05
 
 		research_cost = 2.5
 		#start_year = 28
@@ -641,6 +634,7 @@ technologies = {
 		
 		political_power_gain = 0.1
 		research_speed_factor = 0.06
+		knowledge_gain = 5
 
 		research_cost = 2.5
 		#start_year = 28
@@ -678,7 +672,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		production_factory_max_efficiency_factor = 0.04
+		production_factory_max_efficiency_factor = 0.025
 		global_building_slots_factor = 0.10
 		
 		research_cost = 2.5
@@ -890,7 +884,7 @@ technologies = {
 	conservative_economy_2 = {
 		
 		production_factory_efficiency_gain_factor = 0.04
-		production_factory_max_efficiency_factor = 0.04
+		production_factory_max_efficiency_factor = 0.025
 		
 		research_cost = 2.5
 		#start_year = 40
@@ -920,7 +914,7 @@ technologies = {
 	conservative_resources_2 = {
 
 		local_resources_factor = 0.06
-		food_production_bonus = 0.1
+		peasant_output_factor = 0.12
 
 		research_cost = 2.5
 		#start_year = 40
@@ -956,7 +950,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		expenses_factor = -0.1
+		expenses_factor = -0.2
 		research_speed_factor = 0.04
 
 		research_cost = 2.5
@@ -995,9 +989,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		production_factory_max_efficiency_factor = 0.06
+		production_factory_max_efficiency_factor = 0.025
 		global_building_slots_factor = 0.12
-		peasant_output_factor = -0.01
+		#peasant_output_factor = -0.01
 		
 		research_cost = 2.5
 		#start_year = 48
@@ -1024,18 +1018,6 @@ technologies = {
 	}
 	
 	progressive_3 = {
-
-		#allow = {
-			#NOT = {
-				#has_active_mission = abolish_the_nobility
-			#}
-		#}
-		#on_research_complete = {
-			#set_technology = {
-				#progressive_3 = 0
-			#}
-			#activate_mission = abolish_the_nobility
-		#}
 		
 		path = {
 			leads_to_tech = progressive_economy_3
@@ -1053,6 +1035,7 @@ technologies = {
 			conservative_3
 		}
 		
+		nobility_opinion = -10
 		political_power_gain = 0.7
 		party_popularity_stability_factor = 0.10
 		
@@ -1100,7 +1083,7 @@ technologies = {
 		}
 		
 		political_power_gain = 0.5
-		expenses_factor = -0.1
+		expenses_factor = -0.2
 		
 		research_cost = 2.5
 		#start_year = 52
@@ -1131,6 +1114,7 @@ technologies = {
 	
 		production_factory_start_efficiency_factor = 0.02
 		line_change_production_efficiency_factor = 0.04
+		currency_amount = 0.05
 		
 		research_cost = 2.5
 		#start_year = 56
@@ -1223,7 +1207,8 @@ technologies = {
 	conservative_economy_3 = {
 		
 		production_factory_efficiency_gain_factor = 0.04
-		production_factory_max_efficiency_factor = 0.04
+		production_factory_max_efficiency_factor = 0.025
+		currency_amount = -0.05
 		
 		research_cost = 2.5
 		#start_year = 56
@@ -1253,7 +1238,7 @@ technologies = {
 	conservative_resources_3 = {
 
 		local_resources_factor = 0.06
-		fuel_gain_factor = 0.2
+		peasant_output_factor = 0.12
 
 		research_cost = 2.5
 		#start_year = 56
@@ -1287,7 +1272,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		expenses_factor = -0.1
+		expenses_factor = -0.2
 		research_speed_factor = 0.06
 
 		research_cost = 2.5
@@ -1326,9 +1311,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		production_factory_max_efficiency_factor = 0.08
+		production_factory_max_efficiency_factor = 0.05
 		global_building_slots_factor = 0.14
-		peasant_output_factor = -0.02
+		#peasant_output_factor = -0.02
 		
 		research_cost = 2.5
 		#start_year = 64
@@ -1426,7 +1411,7 @@ technologies = {
 		
 		political_power_gain = 0.5
 		industry_free_repair_factor = 0.2
-		expenses_factor = -0.3
+		expenses_factor = -0.5
 		
 		research_cost = 2.5
 		#start_year = 68
@@ -1457,6 +1442,7 @@ technologies = {
 	
 		production_factory_start_efficiency_factor = 0.12
 		line_change_production_efficiency_factor = 0.04
+		peoples_initiative = -0.1
 		
 		research_cost = 2.5
 		#start_year = 72
@@ -1485,7 +1471,7 @@ technologies = {
 	
 	progressive_resources_4 = {
 	
-		food_production_bonus = 0.1
+		peasant_output_factor = 0.12
 		local_resources_factor = 0.06
 
 		research_cost = 2.5
@@ -1552,7 +1538,8 @@ technologies = {
 	conservative_economy_4 = {
 		
 		production_factory_efficiency_gain_factor = 0.08
-		production_factory_max_efficiency_factor = 0.04
+		production_factory_max_efficiency_factor = 0.025
+		peoples_initiative = 0.1
 		
 		research_cost = 2.5
 		#start_year = 72
@@ -1615,7 +1602,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		expenses_factor = -0.2
+		expenses_factor = -0.6
 		research_speed_factor = 0.04
 
 		research_cost = 2.5
@@ -1645,9 +1632,9 @@ technologies = {
 	
 	reform_5 = {
 		
-		production_factory_max_efficiency_factor = 0.10
+		production_factory_max_efficiency_factor = 0.05
 		global_building_slots_factor = 0.20
-		peasant_output_factor = -0.03
+		#peasant_output_factor = -0.03
 		
 		research_cost = 2.5
 		#start_year = 80
