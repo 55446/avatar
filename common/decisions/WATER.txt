@@ -54,6 +54,10 @@ WATER_industry = {
 					state = FROM.id
 					resources = { aluminium }
 				}
+				add_opinion_modifier = {
+					target = NWT
+					modifier = raided_us
+				}
 			}
 		}
 		remove_effect = {

@@ -102,23 +102,74 @@ clear_revolt = {
 		every_state = {
 			limit = {
 				is_in_array = { PREV.revolt_states = THIS }
+				has_dynamic_modifier = { modifier = revolt_origin }
 			}
 			remove_core_of = var:ROOT.peasant_tag
 			add_core_of = PREV
 
 			remove_dynamic_modifier = { modifier = revolt_origin }
+			set_variable = { state_loyalty_variable = 100 }
+		}
+		every_state = {
+			limit = {
+				is_in_array = { PREV.revolt_states = THIS }
+				has_dynamic_modifier = { modifier = peasant_discontent }
+			}
+			remove_core_of = var:ROOT.peasant_tag
+			add_core_of = PREV
 			remove_dynamic_modifier = { modifier = peasant_discontent }
+			set_variable = { state_loyalty_variable = 100 }
+		}
+		every_state = {
+			limit = {
+				is_in_array = { PREV.revolt_states = THIS }
+				has_dynamic_modifier = { modifier = peasant_insurgency  }
+			}
+			remove_core_of = var:ROOT.peasant_tag
+			add_core_of = PREV
 			remove_dynamic_modifier = { modifier = peasant_insurgency }
+			set_variable = { state_loyalty_variable = 100 }
+		}
+		every_state = {
+			limit = {
+				is_in_array = { PREV.revolt_states = THIS }
+				has_dynamic_modifier = { modifier = peasant_rampage }
+			}
+			remove_core_of = var:ROOT.peasant_tag
+			add_core_of = PREV
 			remove_dynamic_modifier = { modifier = peasant_rampage }
+			set_variable = { state_loyalty_variable = 100 }
+		}
+
+		every_core_state = {
+			limit = {
+				is_controlled_by = ROOT
+				has_dynamic_modifier = { modifier = revolt_origin  }
+			}
+			remove_dynamic_modifier = { modifier = revolt_origin }
 			set_variable = { state_loyalty_variable = 100 }
 		}
 		every_core_state = {
 			limit = {
 				is_controlled_by = ROOT
+				has_dynamic_modifier = { modifier = peasant_discontent  }
 			}
-			remove_dynamic_modifier = { modifier = revolt_origin }
 			remove_dynamic_modifier = { modifier = peasant_discontent }
+			set_variable = { state_loyalty_variable = 100 }
+		}
+		every_core_state = {
+			limit = {
+				is_controlled_by = ROOT
+				has_dynamic_modifier = { modifier = peasant_insurgency}
+			}
 			remove_dynamic_modifier = { modifier = peasant_insurgency }
+			set_variable = { state_loyalty_variable = 100 }
+		}
+		every_core_state = {
+			limit = {
+				is_controlled_by = ROOT
+				has_dynamic_modifier = { modifier = peasant_rampage  }
+			}
 			remove_dynamic_modifier = { modifier = peasant_rampage }
 			set_variable = { state_loyalty_variable = 100 }
 		}

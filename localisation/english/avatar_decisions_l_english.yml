@@ -610,8 +610,13 @@ war_with_western_air_nomads_desc:0 "While the Western Air Nomads possess mastery
  NWT_protective_isolation_spirit:0 "Protective Isolation"
  NWT_protective_isolation_spirit_desc:0 "The Isolation was not always good, but at least we were never the target of conflicts."
  NWT_intervention_spirit:0 "Intervention Spirit"
+<<<<<<< Updated upstream
  NWT_intervention_spirit_desc:0 "To keep our nation save, we have to preserve peace in the world. After all, the nations are connected and we share a common destiny."
 
+=======
+ NWT_intervention_spirit_desc:0 "To keep our nation safe, we have to preserve peace in the world. After all, the nations are connected and we share a common destiny."
+ nwt_wood_raids:0 "Raid [FROM.GetName] For Wood"
+>>>>>>> Stashed changes
  SWT_tribe_union:0 "Tribe Unity"
  SWT_tribe_union_desc:0 "Although the inhabitants of the Southpole have a deep cultural connection, the idea of a united Tribe has remained a concept so far. The independent settlements and villages may prosper from this, the tribe as a whole however is weakened. They must be united to stay relevant in these times of change..."
  WATER_unity_level:0 "[WatertribeUnityVariables]"

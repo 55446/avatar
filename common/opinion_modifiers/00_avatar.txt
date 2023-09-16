@@ -12,6 +12,7 @@ opinion_modifiers = {
 		value = -200
 		trade = yes
 	}
+<<<<<<< Updated upstream
 
 	just_claim = {
 		value = -50
@@ -31,5 +32,9 @@ opinion_modifiers = {
 
 	sassy_earth_kingdom = {
 		value = -25
+=======
+	raided_us = {
+		value = -10
+>>>>>>> Stashed changes
 	}
 }
