@@ -64,6 +64,9 @@ add_ideas = {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 recruit_character = EBA_fengshui
 
 set_cosmetic_tag = EBA_puppet
@@ -129,6 +132,7 @@ recruit_character = EBA_quartermaster_6
 	set_cosmetic_tag = EBA_puppet
 
 	OOB = "EBA_52"
+<<<<<<< Updated upstream
 =======
 recruit_character = DIN_fengshui
 
@@ -196,6 +200,8 @@ recruit_character = DIN_quartermaster_6
 
 	OOB = "DIN_52"
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 	#add_to_war = {
 	#	targeted_alliance = EAR
@@ -208,11 +214,16 @@ recruit_character = DIN_quartermaster_6
 106.2.4 ={
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	set_cosmetic_tag = EBA_puppet
 	OOB = "EBA_106"
 =======
 	set_cosmetic_tag = DIN_puppet
 	OOB = "DIN_106"
+>>>>>>> Stashed changes
+=======
+	set_cosmetic_tag = EBA_puppet
+	OOB = "EBA_106"
 >>>>>>> Stashed changes
 	
 }
@@ -221,12 +232,16 @@ recruit_character = DIN_quartermaster_6
 111.10.30 ={
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 	set_cosmetic_tag = EBA_puppet
 	OOB = "EBA_111"
 }
 
 # Different Ideology Leaders
 recruit_character = EBA_generic
+<<<<<<< Updated upstream
 =======
 	set_cosmetic_tag = DIN_puppet
 	OOB = "DIN_111"
@@ -234,4 +249,6 @@ recruit_character = EBA_generic
 
 # Different Ideology Leaders
 recruit_character = DIN_generic
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

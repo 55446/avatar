@@ -122,7 +122,12 @@ NWT_recruitment_before_unification = {
 		type = role_ratio
 		id = role_swordsmen
 		value = 1
-	}	
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = role_benders
+		value = 1
+	}		
 }
 NWT_drop_reserves_once_you_are_unified = {
 	allowed = {tag = NWT}

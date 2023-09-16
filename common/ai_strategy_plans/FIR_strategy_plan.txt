@@ -58,5 +58,10 @@ FIR_invasion_plan = {
 		type = equipment_stockpile_surplus_ratio
 		value = 100
 	}
+	ai_strategy = {
+		type = build_army
+		id = firebenders
+		value = 10
+	}
 
 }

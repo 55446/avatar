@@ -1,0 +1,18 @@
+NAT_defend_your_capital = {
+	name = "NAT Defense Plan 1"
+	desc = "Do NOT LEAVE YOUR CAPITAL PROVINCE!"
+	allowed = {tag = NAT}
+	enable = {always = yes}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+		states = {316}
+	}
+	ai_strategy = {
+		type = garrison
+		value = 1
+	}
+	research = {
+		industry_construction = 4
+	}
+}
