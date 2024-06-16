@@ -64,6 +64,7 @@
  urbanisation_modifiers:0 "Urbanisation"
 
  additional_scripted_resources:0 "£self_employed_texticon  Self Sufficient Output"
+ stored_scripted_resources:0 "From Storage"
  population_resource_bought_on_market:0 "£consumer_goods_texticon  Population need"
  animal_resource_consumption:0 "£animal_growth_texticon  Animal Consumption"
  factory_resource_consumption:0 "£factory_consumption  Factory Consumption"
@@ -89,7 +90,6 @@
  carpentry_scripted_resources:0 "$carpentry_plural$"
  masonry_scripted_resources:0 "$masonry_plural$"
  steel_beam_factory_scripted_resources:0 "$steel_beam_factory_plural$"
-
  komodo_herd:0 "Komodo Rhino Herd"
  komodo_herd_desc:0 "Large, imposing animals used as beasts of burden, both for war and civilian purposes."
  mongooze_herd:0 "Mongooze Lizard Herd"

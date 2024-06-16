@@ -61,7 +61,10 @@ airbender:0"Airbenders"
 airbender_desc:0"a"
 
 kyoshi_warriors:0 "Kyoshi Warriors"
-
+sandbender:0 "Sandbenders"
+sandbender_desc:0 "Originally earthbenders from the vast Siwong Desert, who have learned to bend grains of sand into terrifying weapons."
+sandglider:0 "Sandgliders"
+sandglider_desc:0 "The only thing more terrifying than a group of sandbenders about to bury you under the sand is a group of sandbenders zipping around on sandgliders."
 ##############
 spearmen:0 "Spearmen"
 spearmen_desc:0 "Used to hold a position and protect the rear of the army. Can also commence limited offensives."

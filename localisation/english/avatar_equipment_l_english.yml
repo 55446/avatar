@@ -566,10 +566,12 @@ support_equipment_desc:0 "Tools not designed for combat that nevertheless prove 
  earth_tank_equipment_5:0 "Improved Earth Tank"
  earth_tank_equipment_5_desc:0 "Our tanks are now equipped with steam-powered grappling hooks and winches to scale previously impassable terrain. Nobody can escape the might of our armored onslaught, and only the strongest of benders stand a chance against a single tank brigade."
 
+ sandbender_equipment:0 "Sandbender Equipment"
+ sandbender_equipment_short:0 "Sandbender Eq." 
  sandbender_equipment_1:0 "Sandbender Equipment"
  sandbender_equipment_1_short:0 "Sandbender Eq."
  sandbender_equipment_1_desc:0 "To survive the blistering conditions of the Si Wong desert, cunning benders invented techniques to manipulate its endless sea of sand."
-
+ sandglider_equipment:0 "Sand Gliders"
  sandglider_equipment_1:0 "Sand-Sailer Equipment"
  sandglider_equipment_1_short:0 "Sand-Sailer"
  sandglider_equipment_1_desc:0 "By stirring up great cyclones of sand, Sandbenders can propel these wooden craft with ease."

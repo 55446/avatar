@@ -1,4 +1,15 @@
-
+EAR_genocide_preparation_production = {
+	allowed = {tag = EAR}
+	enable = {
+		NOT = {has_global_flag = sozins_comet_first}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = earthbender_equipment
+		value = 4
+	}
+}
 defender_defense_dafending = {
 	enable = {
 		original_tag = EAR

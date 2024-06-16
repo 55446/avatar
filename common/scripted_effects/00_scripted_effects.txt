@@ -282,3 +282,56 @@ unit_leader_spirit_add_10 = {
 	unit_leader_spirit_add_1 = yes
 	unit_leader_spirit_add_1 = yes
 }
+avatar_cycle_advance = {
+	if = {
+		limit = {
+			has_global_flag = avatar_born_air
+		}
+		clr_global_flag = avatar_born_air
+		set_global_flag = avatar_born_water
+	}	
+	else_if = {
+		limit = {
+			has_global_flag = avatar_born_water
+		}
+		clr_global_flag = avatar_born_water
+		set_global_flag = avatar_born_earth
+	}
+	else_if = {
+		limit = {
+				has_global_flag = avatar_born_earth
+			}
+			clr_global_flag = avatar_born_earth
+			set_global_flag = avatar_born_fire
+	}
+	else = {
+		clr_global_flag = avatar_born_fire
+		set_global_flag = avatar_born_air
+	}
+}
+a_new_avatar_is_born = {
+	avatar_cycle_advance = yes
+	set_global_flag = avatar_unknown
+	set_variable = { global.avatar_age = 0 }
+	set_variable = { global.avatar_influence = 0 }
+	set_variable = { global.avatar_spirituality = 0 }
+	set_variable = { global.avatar_state = 0 }
+	set_variable = { global.avatar_airbender_skill = 0 }
+	set_variable = { global.avatar_waterbender_skill = 0 }
+	set_variable = { global.avatar_earthbender_skill = 0 }
+	set_variable = { global.avatar_firebender_skill = 0 }
+	every_country = {
+		limit = {
+			has_country_flag = avatar_hostile
+		}
+		clr_country_flag = avatar_hostile
+	}
+	every_country = {
+		limit = {
+			NOT = {
+				has_country_flag = avatar_friendly
+			}
+		}
+		set_country_flag = avatar_friendly
+	}
+}

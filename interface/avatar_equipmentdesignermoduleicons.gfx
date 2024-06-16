@@ -40,6 +40,22 @@ spriteTypes = {
 		name = "GFX_EMSI_fixed_ship_sail_slot"
 		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/sail.dds"
 	}
+	spriteType = {
+		name = "GFX_EMSI_fixed_ship_mast_slot"
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/mast.dds"
+	}
+	spriteType = {
+		name = "GFX_EMSI_fixed_ship_armor_slot"
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/armor.dds"
+	}
+	spriteType = {
+		name = "GFX_EMSI_fixed_ship_crew_slot"
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/crew.dds"
+	}
+	spriteType = {
+		name = "GFX_EMSI_fixed_ship_engine_slot"
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/engine.dds"
+	}
 
 
 ######## Storage icons

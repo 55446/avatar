@@ -107,7 +107,10 @@ spriteTypes = {
 		name = "GFX_avatar_background"
 		textureFile = "gfx/interface/avatar/avatar_background.dds"
 	}
-
+	spriteType = {
+		name = "GFX_avatar_unrevealed"
+		textureFile = "gfx/leaders/avatar_unrevealed.dds"
+	}
 	spriteType = {
 		name = "GFX_avatar_icon"
 		textureFile = "gfx/interface/avatar/avatar_icon.dds"

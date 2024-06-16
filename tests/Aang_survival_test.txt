@@ -1,0 +1,13 @@
+tests = {
+    aang_survives_genocide = {
+        fail = {
+            date > 13.1.1
+            NOT = {
+                OR = {
+                    has_global_flag = avatar_aang
+                    has_global_flag = avatar_missing
+                }
+            }
+        }
+    }
+}

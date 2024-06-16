@@ -173,6 +173,7 @@ news_event = {
 		trigger = {
 			TAG = FIR
 		}
+		set_global_flag = avatar_unknown
 	}
 	option = {
 		name = news.4.b
@@ -181,6 +182,7 @@ news_event = {
 				TAG = FIR
 			}
 		}
+		set_global_flag = avatar_unknown
 	}
 }
 

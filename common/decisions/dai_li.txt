@@ -1040,7 +1040,10 @@ EAR_dai_li_category = {
 			factor = 0
 			modifier = {
 				add = 100
-				is_historical_focus_on = no
+				has_game_rule = {
+					rule = GENOCIDE_AI_BEHAVIOR
+					option = EARTHKINGDOM_AIR_GENOCIDE
+				}
 			}
 		}
 
@@ -1087,7 +1090,10 @@ EAR_dai_li_category = {
 			base = 0
 			modifier = {
 				add = 100
-				is_historical_focus_on = no
+				has_game_rule = {
+					rule = GENOCIDE_AI_BEHAVIOR
+					option = EARTHKINGDOM_AIR_GENOCIDE
+				}
 			}
 		}
 
@@ -1136,7 +1142,10 @@ EAR_dai_li_category = {
 			factor = 100
 			modifier = {
 				add = 100
-				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = GENOCIDE_AI_BEHAVIOR
+					option = EARTHKINGDOM_AIR_GENOCIDE
+				}
 			}
 		}
 
@@ -1189,10 +1198,13 @@ EAR_dai_li_category = {
 		}
 
 		ai_will_do = {
-			factor = 100
+			base = 1
 			modifier = {
 				add = 100
-				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = GENOCIDE_AI_BEHAVIOR
+					option = EARTHKINGDOM_AIR_GENOCIDE
+				}
 			}
 		}
 
