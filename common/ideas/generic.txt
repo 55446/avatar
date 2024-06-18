@@ -351,9 +351,11 @@ ideas = {
 			}
 			available = {
 			}
-			
 			traits = {
 				royal_decree
+			}
+			ROOT = {
+				set_country_flag = ready_for_judgements
 			}
 			ai_will_do = {
 				factor = 0.5

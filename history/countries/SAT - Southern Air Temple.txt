@@ -49,6 +49,14 @@ add_ideas = {
 recruit_character = SAT_monk_pasang
 recruit_character = SAT_monk_gyatso
 
+
+recruit_character = SAT_minister_of_personnel_1
+recruit_character = SAT_minister_of_personnel_2
+recruit_character = SAT_minister_of_personnel_3
+recruit_character = SAT_minister_of_personnel_4
+recruit_character = SAT_minister_of_personnel_5
+recruit_character = SAT_minister_of_personnel_6
+
 recruit_character = SAT_head_of_intelligence_1
 recruit_character = SAT_head_of_intelligence_2
 recruit_character = SAT_head_of_intelligence_3

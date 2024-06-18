@@ -5,6 +5,7 @@
  autonomy_royal_domain:0 "Royal Domain"
  autonomy_tributary:0 "Tributary"
  autonomy_satelit_state:0 "Satelite"
+ autonomy_satelite_country:0 "Protectorate"
  autonomy_imperial_dominion:0 "Dominion"
  autonomy_imperial_colony:0 "Colony"
  autonomy_military_state:0 "Military State"

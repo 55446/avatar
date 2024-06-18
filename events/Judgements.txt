@@ -1,0 +1,160 @@
+add_namespace = judge
+country_event = {
+	id = judge.1 
+	title = judge.1.t
+	desc = judge.1.d
+	trigger = {
+		FROM = {
+			has_idea = generic_law_enforcement_1
+			any_owned_state = {
+				ranch > 0
+			}
+		}
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = judge.1.a
+		custom_effect_tooltip = judge.1.a.tt
+		hidden_effect = {
+			ROOT = {
+				add_stability = 0.04
+				random_owned_controlled_state = {
+					limit = {
+						ranch > 0
+					}
+					damage_building = {
+						type  = ranch
+						damage = 1
+					}	 
+				}
+				set_country_flag = ready_for_judge_2	
+			} 
+		}
+	}
+	option = {
+		name = judge.1.b
+		custom_effect_tooltip = judge.1.b.tt
+		hidden_effect = {
+			ROOT = {
+				add_stability = -0.02
+				add_war_support = -0.03
+				set_country_flag = ready_for_judge_2
+			}
+		}
+	}
+}
+country_event = {
+ 	id = judge.2
+ 	title = judge.2.t
+	desc = judge.2.d
+	trigger = {
+		FROM = {
+			has_idea = generic_law_enforcement_1
+		}
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = judge.2.a
+		set_country_flag = ready_for_event_3
+	}	
+ }
+#judge.3 = {}
+#judge.4 = {}
+#judge.5 = {}
+#judge.6 = {}
+#judge.7 = {}
+#judge.8 = {}
+#judge.9 = {}
+#judge.10 = {}
+#judge.11 = {}
+#judge.12 = {}
+#judge.13 = {}
+#judge.14 = {}
+#judge.15 = {}
+#judge.16 = {}
+#judge.17 = {}
+#judge.18 = {}
+#judge.19 = {}
+#judge.20 = {}
+#judge.21 = {}
+#judge.22 = {}
+#judge.23 = {}
+#judge.24 = {}
+#judge.25 = {}
+#judge.26 = {}
+#judge.27 = {}
+#judge.28 = {}
+#judge.29 = {}
+#judge.30 = {}
+#judge.31 = {}
+#judge.32 = {}
+#judge.33 = {}
+#judge.34 = {}
+#judge.35 = {}
+#judge.36 = {}
+#judge.37 = {}
+#judge.38 = {}
+#judge.39 = {}
+#judge.40 = {}
+#judge.41 = {}
+#judge.42 = {}
+#judge.43 = {}
+#judge.44 = {}
+#judge.45 = {}
+#judge.46 = {}
+#judge.47 = {}
+#judge.48 = {}
+#judge.49 = {}
+#judge.50 = {}
+#judge.51 = {}
+#judge.52 = {}
+#judge.53 = {}
+#judge.54 = {}
+#judge.55 = {}
+#judge.56 = {}
+#judge.57 = {}
+#judge.58 = {}
+#judge.59 = {}
+#judge.60 = {}
+#judge.61 = {}
+#judge.62 = {}
+#judge.63 = {}
+#judge.64 = {}
+#judge.65 = {}
+#judge.66 = {}
+#judge.67 = {}
+#judge.68 = {}
+#judge.69 = {}
+#judge.70 = {}
+#judge.71 = {}
+#judge.72 = {}
+#judge.73 = {}
+#judge.74 = {}
+#judge.75 = {}
+#judge.76 = {}
+#judge.77 = {}
+#judge.78 = {}
+#judge.79 = {}
+#judge.80 = {}
+#judge.81 = {}
+#judge.82 = {}
+#judge.83 = {}
+#judge.84 = {}
+#judge.85 = {}
+#judge.86 = {}
+#judge.87 = {}
+#judge.88 = {}
+#judge.89 = {}
+#judge.90 = {}
+#judge.91 = {}
+#judge.92 = {}
+#judge.93 = {}
+#judge.94 = {}
+#judge.95 = {}
+#judge.96 = {}
+#judge.97 = {}
+#judge.98 = {}
+#judge.99 = {}
+#judge.100 = {}

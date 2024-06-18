@@ -851,6 +851,11 @@ spriteTypes = {
 		name = "GFX_idea_air_benders_only"
 		texturefile = "gfx/interface/ideas/laws/idea_airbender_law_1.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_kyoshi_benders_only"
+		texturefile = "gfx/interface/ideas/laws/idea_kyoshi_warriors_only.dds"
+	}
+	
 
 
 
