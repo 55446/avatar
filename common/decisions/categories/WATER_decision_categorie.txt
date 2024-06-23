@@ -9,7 +9,7 @@ WATER_industry = {
 			tag = NWT
 			tag = SWT
 		}
-		}
+	}
 
 	priority = {
 		base = 9999950
