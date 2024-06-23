@@ -5,8 +5,11 @@ WATER_industry = {
 	picture = GFX_decision_cat_water_industry
 
 	visible = {
-		has_dynamic_modifier = { modifier = water_nation }
-	}
+		OR = { 
+			tag = NWT
+			tag = SWT
+		}
+		}
 
 	priority = {
 		base = 9999950
