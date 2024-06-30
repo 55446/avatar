@@ -47,8 +47,8 @@
  measurements_ttp:0 "Measurements \n\nCost (£knowledge_texticon ): §Y100§!\n\nMeasurements allow us to quantify and compare the energies and dimensions of the physical world."
  measurements:0 "Measurements"
 
- kinectics_ttp:0 "Kinectics \n\nCost (£knowledge_texticon ): §Y100§!\n\nKinectics deals with the effects of forces upon the motions of material bodies."
- kinectics:0 "Kinectics"
+ kinectics_ttp:0 "Kinetics \n\nCost (£knowledge_texticon ): §Y100§!\n\nKinetics deals with the effects of forces upon the motions of material bodies."
+ kinectics:0 "Kinetics"
  wind_manipulation_ttp:0 "Wind Manipulation \n\nCost (£knowledge_texticon ): §Y100§!\n\nWind Manipulation is the use of wind energy to generate useful work."
  wind_manipulation:0 "Wind Manipulation"
  domestication_ttp:0 "Domestication \n\nCost (£knowledge_texticon ): §Y100§!\n\nDomestication is the connection between human and animal, where mutual respect and understanding allow us to work together in harmony."

@@ -672,12 +672,12 @@ support_equipment_desc:0 "Tools not designed for combat that nevertheless prove 
 
  # air
 
- small_birb_equipment_1:0 "Messenger Falcon"
- small_birb_equipment_1_desc:0 "A Falcon, trained for carrying messages."
- medium_birb_equipment_1:0 "Messenger Falcon"
- medium_birb_equipment_1_desc:0 "A Falcon, trained for carrying messages."
- heavy_birb_equipment_1:0 "Messenger Falcon"
- heavy_birb_equipment_1_desc:0 "A Falcon, trained for carrying messages."
+ small_birb_equipment_1:0 "Messenger Pigeon"
+ small_birb_equipment_1_desc:0 "A pigeon trained for carrying messages."
+ medium_birb_equipment_1:0 "War Falcon"
+ medium_birb_equipment_1_desc:0 "A falcon trained for warfare."
+ heavy_birb_equipment_1:0 "War Hawk"
+ heavy_birb_equipment_1_desc:0 "A hawk trained not to kill everyone it sees – for several seconds."
  FIR_small_birb_equipment_1:0 "Messenger Hawk"
  FIR_small_birb_equipment_1_desc:0 "A Hawk, trained for carrying messages."
  WAT_small_birb_equipment_1:0 "Winged Lemur"
