@@ -225,6 +225,7 @@ EARTH_decentralised_warfare = {
 		any_allied_country = {
 			has_capitulated = no
 		}
+		NOT = {tag = EAR}
 	}
 	abort_when_not_enabled = yes
 
@@ -235,11 +236,6 @@ EARTH_decentralised_warfare = {
 	ai_strategy = {
 		type = garrison
 		value = 90
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = garrison
-		value = 50
 	}
 
 	ai_strategy = {
