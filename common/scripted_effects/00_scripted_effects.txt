@@ -335,3 +335,26 @@ a_new_avatar_is_born = {
 		set_country_flag = avatar_friendly
 	}
 }
+calculate_light_cavalry = {
+	set_temp_variable = {
+		c = 0
+	}
+	every_army_leader = {
+		add_to_temp_variable = {
+			var = c
+			value = THIS.num_battalions_with_type@eel_hound
+		}
+		add_to_temp_variable = {
+			var = c
+			value = THIS.num_battalions_with_type@mongooze_lizards
+		}
+		add_to_temp_variable = {
+			var = c
+			value = THIS.num_battalions_with_type@cat_deer
+		}
+		add_to_temp_variable = {
+			var = c
+			value = THIS.num_battalions_with_type@buffalo_yaks
+		}
+	}
+}
